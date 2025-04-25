@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "es2/prova 1/teste do commit hell yeah.md",
+                "file": "es2/prova 1/Capítulo 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "teste do commit hell yeah"
+              "title": "Capítulo 1"
             }
           }
         ]
@@ -166,7 +166,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,8 +185,9 @@
   },
   "active": "f45d59c634935895",
   "lastOpenFiles": [
-    "es2/prova 1/AULA 03 - PROCESSOS PRESCRITIVOS.pdf",
+    "es2/prova 1/AULA 04 - MODELOS ÁGEIS I - Scrum e LeSS.pdf",
     "es2/prova 1/teste do commit hell yeah.md",
+    "es2/prova 1/AULA 03 - PROCESSOS PRESCRITIVOS.pdf",
     "obsidian-ufsc/es2/prova 1/cap5.pdf",
     "obsidian-ufsc/es2/prova 1/cap4.pdf",
     "obsidian-ufsc/es2/prova 1/cap3.pdf",
@@ -200,7 +202,6 @@
     "obsidian-ufsc/es2/prova 1/AULA 06 - MODELOS ÁGEIS III - FDD e Crystal Clear.pdf",
     "obsidian-ufsc/es2/prova 1/AULA 05 - MODELOS ÁGEIS II - Lean, Kanban, Scrumban e XP.pdf",
     "obsidian-ufsc/es2/prova 1/AULA 04 - MODELOS ÁGEIS I - Scrum e LeSS.pdf",
-    "obsidian-ufsc/es2/prova 1/AULA 03 - PROCESSOS PRESCRITIVOS.pdf",
     "Welcome.md",
     "es2/prova 1/Capítulo 5.md",
     "es2/prova 1/Capítulo 4.md",
