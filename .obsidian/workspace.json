@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "8f6cc6b70a8ee773",
+    "type": "split",
+    "children": [
+      {
+        "id": "5ad6fdc1f6da9b1d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f45d59c634935895",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "es2/prova 1/teste do commit hell yeah.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "teste do commit hell yeah"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dd5247d76a31b14d",
+    "type": "split",
+    "children": [
+      {
+        "id": "e7ad3bbddccce50e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a95c37480f02ba08",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5b806f76e306891b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "7e159410782b2eff",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f422d6ad2d1f3b7e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f0439f34aabc5952",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "54c344bd6b7ab53f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "ab7ca35788bfd81d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "a67855f54d03414b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "1532e038cb94ea33",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          },
+          {
+            "id": "e2b3f38626ac7526",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
+    }
+  },
+  "active": "f45d59c634935895",
+  "lastOpenFiles": [
+    "es2/prova 1/AULA 03 - PROCESSOS PRESCRITIVOS.pdf",
+    "es2/prova 1/teste do commit hell yeah.md",
+    "obsidian-ufsc/es2/prova 1/cap5.pdf",
+    "obsidian-ufsc/es2/prova 1/cap4.pdf",
+    "obsidian-ufsc/es2/prova 1/cap3.pdf",
+    "obsidian-ufsc/es2/prova 1/cap2.pdf",
+    "obsidian-ufsc/es2/prova 1/cap1.pdf",
+    "obsidian-ufsc/es2/prova 1/Capítulo 5.md",
+    "obsidian-ufsc/es2/prova 1/Capítulo 4.md",
+    "obsidian-ufsc/es2/prova 1/Capítulo 3.md",
+    "obsidian-ufsc/es2/prova 1/Capítulo 2.md",
+    "obsidian-ufsc/es2/prova 1/Capítulo 1.md",
+    "obsidian-ufsc/es2/prova 1/AULA 07 - PROCESSO UNIFICADO.pdf",
+    "obsidian-ufsc/es2/prova 1/AULA 06 - MODELOS ÁGEIS III - FDD e Crystal Clear.pdf",
+    "obsidian-ufsc/es2/prova 1/AULA 05 - MODELOS ÁGEIS II - Lean, Kanban, Scrumban e XP.pdf",
+    "obsidian-ufsc/es2/prova 1/AULA 04 - MODELOS ÁGEIS I - Scrum e LeSS.pdf",
+    "obsidian-ufsc/es2/prova 1/AULA 03 - PROCESSOS PRESCRITIVOS.pdf",
+    "Welcome.md",
+    "es2/prova 1/Capítulo 5.md",
+    "es2/prova 1/Capítulo 4.md",
+    "es2/prova 1/Capítulo 3.md",
+    "es2/prova 1/Capítulo 2.md",
+    "es2/prova 1/Capítulo 1.md"
+  ]
+}
