@@ -11,16 +11,14 @@
             "id": "f45d59c634935895",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "infosoc/seminário 1/slides/08 - De 1970 a 1979.pdf",
-                "page": 1,
-                "left": -46,
-                "top": 543,
-                "zoom": 1.1
+                "file": "es2/prova 1/Capítulo 1.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "08 - De 1970 a 1979"
+              "icon": "lucide-file",
+              "title": "Capítulo 1"
             }
           }
         ]
@@ -187,6 +185,7 @@
   },
   "active": "f45d59c634935895",
   "lastOpenFiles": [
+    "infosoc/seminário 1/slides/08 - De 1970 a 1979.pdf",
     "infosoc/seminário 1/slides/06 - De 1950 a 1959.pdf",
     "distribuida/Unidade 1/07 - Arquiteturas.pdf",
     "distribuida/Unidade 1/03 - Revisão SO.pdf",
@@ -197,7 +196,6 @@
     "infosoc/seminário 1/slides/11 - De 2000 a 2009.pdf",
     "infosoc/seminário 1/slides/10 - De 1990 a 1999.pdf",
     "infosoc/seminário 1/slides/09 - De 1980 a 1989.pdf",
-    "infosoc/seminário 1/slides/08 - De 1970 a 1979.pdf",
     "es2/prova 1/alo.md",
     "es2/prova 1/Capítulo 3.md",
     "es2/prova 1/teste do commit hell yeah.md",
