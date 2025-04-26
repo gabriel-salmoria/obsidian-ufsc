@@ -11,14 +11,17 @@
             "id": "f45d59c634935895",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "es2/prova 1/Capítulo 1.md",
-                "mode": "source",
-                "source": false
+                "file": "Untitled.canvas",
+                "viewState": {
+                  "x": -265.6678963180915,
+                  "y": -294.48082786140236,
+                  "zoom": -0.7466263123109655
+                }
               },
-              "icon": "lucide-file",
-              "title": "Capítulo 1"
+              "icon": "lucide-layout-dashboard",
+              "title": "Untitled"
             }
           }
         ]
@@ -185,6 +188,9 @@
   },
   "active": "f45d59c634935895",
   "lastOpenFiles": [
+    "es2/prova 1/AULA 02 - PROCESSO.pdf",
+    "Untitled.canvas",
+    "es2/prova 1/Capítulo 1.md",
     "infosoc/seminário 1/slides/08 - De 1970 a 1979.pdf",
     "infosoc/seminário 1/slides/06 - De 1950 a 1959.pdf",
     "distribuida/Unidade 1/07 - Arquiteturas.pdf",
@@ -195,11 +201,9 @@
     "infosoc/seminário 1/slides/12 - De 2010 em diante.pdf",
     "infosoc/seminário 1/slides/11 - De 2000 a 2009.pdf",
     "infosoc/seminário 1/slides/10 - De 1990 a 1999.pdf",
-    "infosoc/seminário 1/slides/09 - De 1980 a 1989.pdf",
     "es2/prova 1/alo.md",
     "es2/prova 1/Capítulo 3.md",
     "es2/prova 1/teste do commit hell yeah.md",
-    "es2/prova 1/Capítulo 1.md",
     "obsidian-ufsc/es2/prova 1/Capítulo 5.md",
     "obsidian-ufsc/es2/prova 1/Capítulo 4.md",
     "obsidian-ufsc/es2/prova 1/Capítulo 3.md",
