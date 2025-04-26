@@ -13,14 +13,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "redes2/02 - Topologias.pdf",
-                "page": 12,
-                "left": -3,
+                "file": "infosoc/seminário 1/slides/Aulas 02 De 1623 a 1820.pdf",
+                "page": 7,
+                "left": -46,
                 "top": 543,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
-              "title": "02 - Topologias"
+              "title": "Aulas 02 De 1623 a 1820"
             }
           }
         ]
@@ -168,7 +168,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,17 +187,17 @@
   },
   "active": "f45d59c634935895",
   "lastOpenFiles": [
-    "infosoc/seminário 1/slides/Aulas 08 De 1970 a 1979.pdf",
-    "infosoc/seminário 1/slides/Aulas 01 Pre historia a 1622.pdf",
-    "es2/prova 1/cap1.pdf",
-    "redes2/08 - Segurança.pdf",
-    "redes2/02 - Topologias.pdf",
-    "redes2/07 - Gerenciamento de Rede.pdf",
-    "redes2/06 - Camada de Rede.pdf",
-    "redes2/05 - Camada de transporte.pdf",
-    "redes2/04 - Camada de aplicação.pdf",
-    "redes2/03 - Arquiteturas.pdf",
-    "redes2/02.pdf",
+    "infosoc/seminário 1/textos/historia da computação PARTE 04 - (1885 a 1935) .pdf",
+    "infosoc/seminário 1/textos/13 - bibliografia.pdf",
+    "infosoc/seminário 1/textos/12 - (2010 ao presente)A.pdf",
+    "infosoc/seminário 1/textos/11 - (2000 a 2009).pdf",
+    "infosoc/seminário 1/textos/10 - (1990 a 1999).pdf",
+    "infosoc/seminário 1/textos/09 - (1980 a 1989).pdf",
+    "infosoc/seminário 1/textos/08 - (1970 a 1979).pdf",
+    "infosoc/seminário 1/textos/07 - (1960 a 1969).pdf",
+    "infosoc/seminário 1/textos/06 - (1950 a 1959).pdf",
+    "infosoc/seminário 1/textos/05 - (1936 a 1950).pdf",
+    "infosoc/seminário 1/textos/04 - (1885 a 1935) .pdf",
     "es2/prova 1/alo.md",
     "es2/prova 1/Capítulo 3.md",
     "es2/prova 1/teste do commit hell yeah.md",
