@@ -13,14 +13,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "infosoc/seminário 1/slides/06 - De 1950 a 1959.pdf",
+                "file": "infosoc/seminário 1/slides/08 - De 1970 a 1979.pdf",
                 "page": 1,
                 "left": -46,
                 "top": 543,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
-              "title": "06 - De 1950 a 1959"
+              "title": "08 - De 1970 a 1979"
             }
           }
         ]
@@ -187,6 +187,10 @@
   },
   "active": "f45d59c634935895",
   "lastOpenFiles": [
+    "infosoc/seminário 1/slides/06 - De 1950 a 1959.pdf",
+    "distribuida/Unidade 1/07 - Arquiteturas.pdf",
+    "distribuida/Unidade 1/03 - Revisão SO.pdf",
+    "distribuida/Unidade 1/01 - Introdução.pdf",
     "redes2/02 - Topologias.pdf",
     "infosoc/seminário 1/slides/Aulas 02 De 1623 a 1820.pdf",
     "infosoc/seminário 1/slides/12 - De 2010 em diante.pdf",
@@ -194,10 +198,6 @@
     "infosoc/seminário 1/slides/10 - De 1990 a 1999.pdf",
     "infosoc/seminário 1/slides/09 - De 1980 a 1989.pdf",
     "infosoc/seminário 1/slides/08 - De 1970 a 1979.pdf",
-    "infosoc/seminário 1/slides/07 - De 1960 a 1969.pdf",
-    "infosoc/seminário 1/slides/06 - De 1950 a 1959.pdf",
-    "infosoc/seminário 1/slides/05 - De 1936 a 1950.pdf",
-    "infosoc/seminário 1/slides/04 - De 1885 a 1935.pdf",
     "es2/prova 1/alo.md",
     "es2/prova 1/Capítulo 3.md",
     "es2/prova 1/teste do commit hell yeah.md",
