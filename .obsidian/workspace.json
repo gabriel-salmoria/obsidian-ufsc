@@ -11,17 +11,16 @@
             "id": "f45d59c634935895",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "pdf",
               "state": {
-                "file": "Untitled.canvas",
-                "viewState": {
-                  "x": -195.5,
-                  "y": -25.685412187706124,
-                  "zoom": 0
-                }
+                "file": "redes2/03 - Arquiteturas.pdf",
+                "page": 8,
+                "left": -5,
+                "top": 544,
+                "zoom": 1.1
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Untitled"
+              "icon": "lucide-file-text",
+              "title": "03 - Arquiteturas"
             }
           }
         ]
@@ -81,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 256.50484466552734
   },
   "right": {
     "id": "f422d6ad2d1f3b7e",
@@ -188,9 +187,9 @@
   },
   "active": "f45d59c634935895",
   "lastOpenFiles": [
+    "Untitled.canvas",
     "es2/prova 1/Capítulo 4.md",
     "2025-04-25.md",
-    "Untitled.canvas",
     "es2/prova 1/AULA 02 - PROCESSO.pdf",
     "es2/prova 1/Capítulo 1.md",
     "infosoc/seminário 1/slides/08 - De 1970 a 1979.pdf",
