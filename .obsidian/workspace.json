@@ -13,14 +13,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "es2/prova 1/cap1.pdf",
-                "page": 2,
-                "left": -228,
-                "top": 243,
+                "file": "infosoc/seminário 1/slides/Aulas 08 De 1970 a 1979.pdf",
+                "page": 1,
+                "left": -3,
+                "top": 543,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
-              "title": "cap1"
+              "title": "Aulas 08 De 1970 a 1979"
             }
           }
         ]
@@ -168,8 +168,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 400.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,17 +186,17 @@
   },
   "active": "f45d59c634935895",
   "lastOpenFiles": [
-    "infosoc/seminário 1",
-    "infosoc",
-    "distribuida/Unidade 2/11 - Aplicações web.pdf",
-    "distribuida/Unidade 2/12 - Serviços web.pdf",
-    "distribuida/Unidade 2/11 - Serviços web.pdf",
-    "distribuida/Unidade 2/10 - RMI.pdf",
-    "distribuida/Unidade 2/09 - Middleware.pdf",
-    "distribuida/Unidade 3",
-    "distribuida/Unidade 2",
-    "distribuida/Unidade 1/08 - Padrões de projeto.pdf",
-    "distribuida/Unidade 1/07 - Arquiteturas.pdf",
+    "infosoc/seminário 1/slides/Aulas 01 Pre historia a 1622.pdf",
+    "infosoc/seminário 1/slides/Aulas 08 De 1970 a 1979.pdf",
+    "es2/prova 1/cap1.pdf",
+    "redes2/08 - Segurança.pdf",
+    "redes2/02 - Topologias.pdf",
+    "redes2/07 - Gerenciamento de Rede.pdf",
+    "redes2/06 - Camada de Rede.pdf",
+    "redes2/05 - Camada de transporte.pdf",
+    "redes2/04 - Camada de aplicação.pdf",
+    "redes2/03 - Arquiteturas.pdf",
+    "redes2/02.pdf",
     "es2/prova 1/alo.md",
     "es2/prova 1/Capítulo 3.md",
     "es2/prova 1/teste do commit hell yeah.md",
