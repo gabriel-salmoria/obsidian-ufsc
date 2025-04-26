@@ -11,19 +11,35 @@
             "id": "f45d59c634935895",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "canvas",
               "state": {
-                "file": "redes2/03 - Arquiteturas.pdf",
-                "page": 8,
-                "left": -5,
-                "top": 544,
-                "zoom": 1.1
+                "file": "Untitled.canvas",
+                "viewState": {
+                  "x": -253.147557673677,
+                  "y": 7.267658406699954,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file-text",
-              "title": "03 - Arquiteturas"
+              "icon": "lucide-layout-dashboard",
+              "title": "Untitled"
+            }
+          },
+          {
+            "id": "9ea7c75c60dba5fb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "es2/prova 1/anotacoes/Capítulo 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Capítulo 1"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -80,7 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.50484466552734
+    "width": 296.50484466552734
   },
   "right": {
     "id": "f422d6ad2d1f3b7e",
@@ -96,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "es2/prova 1/anotacoes/Capítulo 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +122,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Welcome"
+              "title": "Backlinks for Capítulo 1"
             }
           },
           {
@@ -115,12 +131,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Welcome.md",
+                "file": "es2/prova 1/anotacoes/Capítulo 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Welcome"
+              "title": "Outgoing links from Capítulo 1"
             }
           },
           {
@@ -144,13 +160,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md",
+                "file": "es2/prova 1/anotacoes/Capítulo 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Welcome"
+              "title": "Outline of Capítulo 1"
             }
           },
           {
@@ -164,11 +180,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 406.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -185,24 +201,25 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "f45d59c634935895",
+  "active": "9ea7c75c60dba5fb",
   "lastOpenFiles": [
+    "es2/prova 1/slides/AULA 02 - PROCESSO.pdf",
+    "es2/prova 1/anotacoes/Capítulo 5.md",
+    "es2/prova 1/anotacoes/Capítulo 1.md",
+    "es2/prova 1/textos/cap1.pdf",
+    "es2/prova 1/anotacoes",
+    "es2/prova 1/slides/AULA 01 - INTRODUÇÃO.pdf",
+    "es2/prova 1/textos",
+    "es2/prova 1/alo.md",
+    "es2/prova 1/slides",
     "Untitled.canvas",
-    "es2/prova 1/Capítulo 4.md",
+    "redes2/03 - Arquiteturas.pdf",
+    "es2/prova 1/anotacoes/Capítulo 4.md",
     "2025-04-25.md",
-    "es2/prova 1/AULA 02 - PROCESSO.pdf",
-    "es2/prova 1/Capítulo 1.md",
     "infosoc/seminário 1/slides/08 - De 1970 a 1979.pdf",
     "infosoc/seminário 1/slides/06 - De 1950 a 1959.pdf",
     "distribuida/Unidade 1/07 - Arquiteturas.pdf",
-    "distribuida/Unidade 1/03 - Revisão SO.pdf",
-    "distribuida/Unidade 1/01 - Introdução.pdf",
-    "redes2/02 - Topologias.pdf",
-    "infosoc/seminário 1/slides/Aulas 02 De 1623 a 1820.pdf",
-    "infosoc/seminário 1/slides/12 - De 2010 em diante.pdf",
-    "infosoc/seminário 1/slides/11 - De 2000 a 2009.pdf",
-    "es2/prova 1/alo.md",
-    "es2/prova 1/Capítulo 3.md",
+    "es2/prova 1/anotacoes/Capítulo 3.md",
     "es2/prova 1/teste do commit hell yeah.md",
     "obsidian-ufsc/es2/prova 1/Capítulo 5.md",
     "obsidian-ufsc/es2/prova 1/Capítulo 4.md",
@@ -210,7 +227,6 @@
     "obsidian-ufsc/es2/prova 1/Capítulo 2.md",
     "obsidian-ufsc/es2/prova 1/Capítulo 1.md",
     "Welcome.md",
-    "es2/prova 1/Capítulo 5.md",
-    "es2/prova 1/Capítulo 2.md"
+    "es2/prova 1/anotacoes/Capítulo 2.md"
   ]
 }
