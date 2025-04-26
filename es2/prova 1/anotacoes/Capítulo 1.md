@@ -72,9 +72,14 @@ Em pequenas equipes, uma pessoa pode acumular vários papéis, mas as funções 
 - **Anos 2000:** Surgimento dos métodos ágeis – foco em equipes pequenas e eficientes.
 - **Hoje:** Corpo de conhecimentos sistematizado com SWEBOK (ISO/IEC TR 19759).
 
-## $({\frac{x}{2} + 5})^{10} = \prod_1^{10}$
-## 1.6 Tipos de Software segundo a Engenharia de Software
+$$
 
+$$
+
+$$
+g(s + x) = g(s) + g'(s)x + g''(s) \frac{x^{2}}{2!} + \dots jk_
+$$
+## 1.6 Tipos de Software segundo a Engenharia de Software
 Não há um processo único. Cada tipo de sistema exige abordagens específicas:
 
 - **Software básico:** Drivers, compiladores, SOs.
