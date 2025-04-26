@@ -14,7 +14,7 @@
               "type": "pdf",
               "state": {
                 "file": "redes2/02 - Topologias.pdf",
-                "page": 1,
+                "page": 12,
                 "left": -3,
                 "top": 543,
                 "zoom": 1.1
@@ -168,7 +168,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 400.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
