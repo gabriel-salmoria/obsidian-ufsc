@@ -13,14 +13,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "infosoc/seminário 1/slides/Aulas 08 De 1970 a 1979.pdf",
+                "file": "redes2/02 - Topologias.pdf",
                 "page": 1,
                 "left": -3,
                 "top": 543,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
-              "title": "Aulas 08 De 1970 a 1979"
+              "title": "02 - Topologias"
             }
           }
         ]
@@ -186,8 +186,8 @@
   },
   "active": "f45d59c634935895",
   "lastOpenFiles": [
-    "infosoc/seminário 1/slides/Aulas 01 Pre historia a 1622.pdf",
     "infosoc/seminário 1/slides/Aulas 08 De 1970 a 1979.pdf",
+    "infosoc/seminário 1/slides/Aulas 01 Pre historia a 1622.pdf",
     "es2/prova 1/cap1.pdf",
     "redes2/08 - Segurança.pdf",
     "redes2/02 - Topologias.pdf",
