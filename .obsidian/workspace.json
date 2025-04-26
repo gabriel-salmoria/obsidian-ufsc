@@ -11,14 +11,16 @@
             "id": "b46a80ad8b2439ee",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "2025-04-25.md",
-                "mode": "source",
-                "source": false
+                "file": "redes2/02 - Topologias.pdf",
+                "page": 1,
+                "left": -55,
+                "top": 543,
+                "zoom": 1.1
               },
-              "icon": "lucide-file",
-              "title": "2025-04-25"
+              "icon": "lucide-file-text",
+              "title": "02 - Topologias"
             }
           }
         ]
@@ -163,7 +165,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 406.5
+    "width": 406.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,6 +184,11 @@
   },
   "active": "b46a80ad8b2439ee",
   "lastOpenFiles": [
+    "infosoc/seminário 1/textos/08 - (1970 a 1979).pdf",
+    "infosoc/seminário 1/textos/06 - (1950 a 1959).pdf",
+    "infosoc/seminário 1/slides/09 - De 1980 a 1989.pdf",
+    "infosoc/seminário 1/slides/02 - De 1623 a 1820.pdf",
+    "2025-04-25.md",
     "es2/prova 1/slides/AULA 03 - PROCESSOS PRESCRITIVOS.pdf",
     "Untitled.canvas",
     "es2/prova 1/anotacoes/Capítulo 1.md",
@@ -192,12 +200,7 @@
     "es2/prova 1/textos",
     "es2/prova 1/alo.md",
     "es2/prova 1/slides",
-    "redes2/03 - Arquiteturas.pdf",
     "es2/prova 1/anotacoes/Capítulo 4.md",
-    "2025-04-25.md",
-    "infosoc/seminário 1/slides/08 - De 1970 a 1979.pdf",
-    "infosoc/seminário 1/slides/06 - De 1950 a 1959.pdf",
-    "distribuida/Unidade 1/07 - Arquiteturas.pdf",
     "es2/prova 1/anotacoes/Capítulo 3.md",
     "es2/prova 1/teste do commit hell yeah.md",
     "obsidian-ufsc/es2/prova 1/Capítulo 5.md",
