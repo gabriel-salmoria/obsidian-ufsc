@@ -13,14 +13,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "es2/prova 2/slides/AULA 09 - ESTIMAÇÃO DE ESFORÇO 1 - APF e PH.pdf",
+                "file": "redes2/slides/08 - Segurança.pdf",
                 "page": 1,
-                "left": -27,
+                "left": -147,
                 "top": 543,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
-              "title": "AULA 09 - ESTIMAÇÃO DE ESFORÇO 1 - APF e PH"
+              "title": "08 - Segurança"
             }
           }
         ]
@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.50484466552734
+    "width": 296.50484466552734,
+    "collapsed": true
   },
   "right": {
     "id": "f422d6ad2d1f3b7e",
@@ -165,7 +166,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 406.5
+    "width": 406.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,17 +185,18 @@
   },
   "active": "4726960b86950d5d",
   "lastOpenFiles": [
+    "redes2/slides/01 - Introdução as Redes.pdf",
+    "infosoc/seminário 1/textos/08 - (1970 a 1979).pdf",
+    "redes2/anotacoes",
+    "redes2/Untitled.md",
+    "redes2/slides",
+    "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
+    "es2/prova 2/slides/AULA 09 - ESTIMAÇÃO DE ESFORÇO 1 - APF e PH.pdf",
     "es2/prova 2/slides/AULA 13 - GERENCIAMENTO DE CONFIGURAÇÃO E MUDANÇA.pdf",
     "es2/prova 2/slides/AULA 12 - GERENCIAMENTO DE PROJETO.pdf",
     "es2/prova 2/slides/AULA 11 - GERENCIAMENTO DE RISCOS.pdf",
     "es2/prova 2/slides/AULA 10 - ESTIMAÇÃO DE ESFORÇO 2 - CII.pdf",
-    "es2/prova 2/slides/AULA 09 - ESTIMAÇÃO DE ESFORÇO 1 - APF e PH.pdf",
-    "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
     "es2/prova 2/textos/cap10.pdf",
-    "es2/prova 2/textos/cap9.pdf",
-    "es2/prova 2/textos/cap8.pdf",
-    "es2/prova 2/textos/cap7.pdf",
-    "es2/prova 2/textos/cap6.pdf",
     "conflict-files-obsidian-git.md",
     "Untitled.canvas",
     "2025-04-25.md",
