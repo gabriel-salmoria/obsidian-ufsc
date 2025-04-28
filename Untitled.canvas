@@ -3,8 +3,9 @@
 		{"id":"e4403987a02852fe","type":"text","text":"sure bro if it isnt gay ok we just homies my guy nothing gay like watching movies together or watever","x":-300,"y":-32,"width":250,"height":194},
 		{"id":"fb1f611c7a1040ac","type":"text","text":"yes i agree bro youre so hot god damn wanna maybe hang out some time","x":158,"y":-240,"width":250,"height":159},
 		{"id":"53fc282b3e04bf3a","type":"text","text":"hey bro spreadsheets are fucking disgusting i hate them so much","x":-300,"y":-478,"width":250,"height":137},
-		{"id":"e3e80aec02bce71c","x":-880,"y":67,"width":250,"height":60,"type":"text","text":"wow really this is kinda cool..."},
-		{"id":"5d57961792034e6a","type":"text","text":"wowie this is very nice bro","x":-867,"y":-238,"width":383,"height":78}
+		{"id":"e3e80aec02bce71c","type":"text","text":"wow really this is kinda cool...","x":-900,"y":-108,"width":250,"height":54},
+		{"id":"5d57961792034e6a","type":"text","text":"wowie this is very nice bro","x":-887,"y":-382,"width":383,"height":70},
+		{"id":"34df2facb04d1317","x":-605,"y":-196,"width":250,"height":60,"type":"text","text":"alo aloa loa"}
 	],
 	"edges":[
 		{"id":"f79052d0e7e69105","fromNode":"53fc282b3e04bf3a","fromSide":"bottom","toNode":"fb1f611c7a1040ac","toSide":"top"},
