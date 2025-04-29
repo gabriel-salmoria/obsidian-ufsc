@@ -15,8 +15,8 @@
               "state": {
                 "file": "es2/prova 2/textos/cap6.pdf",
                 "page": 1,
-                "left": -214,
-                "top": 228,
+                "left": -321,
+                "top": 232,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
@@ -30,17 +30,16 @@
               "type": "pdf",
               "state": {
                 "file": "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
-                "page": 1,
-                "left": -160,
-                "top": 35,
+                "page": 3,
+                "left": -267,
+                "top": 449,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
               "title": "AULA 08 - PLANEJAMENTO"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -200,10 +199,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "31e163a05a160956",
+  "active": "4726960b86950d5d",
   "lastOpenFiles": [
-    "es2/prova 2/textos/cap6.pdf",
     "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
+    "es2/prova 2/textos/cap6.pdf",
     "es2/prova 2/anotacoes/Aula 8 - Planejamento.md",
     "redes2/slides/08 - Segurança.pdf",
     "redes2/slides/01 - Introdução as Redes.pdf",
