@@ -13,11 +13,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "redes2/slides/01 - Introdução as Redes.pdf",
-                "page": 21,
-                "left": -3,
-                "top": 380,
-                "zoom": 1.1
+                "file": "redes2/slides/01 - Introdução as Redes.pdf"
               },
               "icon": "lucide-file-text",
               "title": "01 - Introdução as Redes"
@@ -190,7 +186,6 @@
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
-      "copilot:Open Copilot Chat": false,
       "smart-composer:Open smart composer": false
     }
   },
