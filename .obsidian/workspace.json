@@ -14,10 +14,8 @@
               "type": "pdf",
               "state": {
                 "file": "es2/prova 2/textos/cap6.pdf",
-                "page": 12,
-                "left": -113,
-                "top": 138,
-                "zoom": 1.1
+                "page": 1,
+                "zoom": 1
               },
               "icon": "lucide-file-text",
               "title": "cap6"
@@ -221,7 +219,6 @@
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
-      "smart-composer:Open smart composer": false,
       "copilot:Open Copilot Chat": false
     }
   },
