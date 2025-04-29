@@ -156,9 +156,103 @@
           "file": "es2/prova 2/textos/cap6.pdf"
         }
       ]
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "wtf bro",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nwtf bro\n\n"
+        }
+      ],
+      "id": "c4992385-65f1-4bfc-a160-c57d599d60e2",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "es2/prova 2/textos/cap6.pdf"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "hello",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nhello\n\n"
+        }
+      ],
+      "id": "767e7065-f865-42fc-a1ef-adbedf743668",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf"
+        }
+      ]
     }
   ],
   "createdAt": 1745931354633,
-  "updatedAt": 1745931415555,
+  "updatedAt": 1745931847279,
   "schemaVersion": 1
 }

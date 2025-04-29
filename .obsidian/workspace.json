@@ -13,12 +13,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "es2/prova 2/textos/cap6.pdf",
-                "page": 1,
-                "zoom": 1
+                "file": "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
+                "page": 3,
+                "left": -4,
+                "top": 459,
+                "zoom": 1.1
               },
               "icon": "lucide-file-text",
-              "title": "cap6"
+              "title": "AULA 08 - PLANEJAMENTO"
             }
           },
           {
@@ -209,11 +211,12 @@
   },
   "active": "f3afbf07d035d861",
   "lastOpenFiles": [
+    "es2/prova 1/anotacoes/Capítulo 2.md",
+    "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
+    "es2/prova 2/textos/cap6.pdf",
     "es2/prova 1/anotacoes/Capítulo 4.md",
     "es2/prova 2/slides/AULA 12 - GERENCIAMENTO DE PROJETO.pdf",
-    "es2/prova 2/textos/cap6.pdf",
     "infosoc/2025-1 seminario 1.pdf",
-    "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
     "Untitled.canvas",
     "2025-04-25.md",
     "es2/prova 2/anotacoes/Aula 8 - Planejamento.md",
@@ -235,7 +238,6 @@
     "obsidian-ufsc/es2/prova 1/Capítulo 3.md",
     "obsidian-ufsc/es2/prova 1/Capítulo 2.md",
     "obsidian-ufsc/es2/prova 1/Capítulo 1.md",
-    "Welcome.md",
-    "es2/prova 1/anotacoes/Capítulo 2.md"
+    "Welcome.md"
   ]
 }
