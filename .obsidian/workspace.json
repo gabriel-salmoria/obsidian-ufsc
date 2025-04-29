@@ -14,9 +14,9 @@
               "type": "pdf",
               "state": {
                 "file": "redes2/slides/04 - Camada de aplicação.pdf",
-                "page": 2,
-                "left": -40,
-                "top": 54,
+                "page": 1,
+                "left": -3,
+                "top": 543,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
@@ -80,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.50484466552734,
-    "collapsed": true
+    "width": 296.50484466552734
   },
   "right": {
     "id": "f422d6ad2d1f3b7e",
@@ -173,12 +172,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 475.5,
-    "collapsed": true
+    "width": 475.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,7 +193,7 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "4726960b86950d5d",
+  "active": "e2b3f38626ac7526",
   "lastOpenFiles": [
     "redes2/slides/01 - Introdução as Redes.pdf",
     "es2/prova 2/textos/cap6.pdf",
