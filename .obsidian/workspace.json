@@ -14,9 +14,9 @@
               "type": "pdf",
               "state": {
                 "file": "es2/prova 2/textos/cap6.pdf",
-                "page": 1,
-                "left": -321,
-                "top": 232,
+                "page": 2,
+                "left": -113,
+                "top": 610,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
@@ -31,8 +31,8 @@
               "state": {
                 "file": "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
                 "page": 3,
-                "left": -267,
-                "top": 449,
+                "left": -59,
+                "top": 295,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
@@ -96,8 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.50484466552734,
-    "collapsed": true
+    "width": 296.50484466552734
   },
   "right": {
     "id": "f422d6ad2d1f3b7e",
@@ -201,7 +200,10 @@
   },
   "active": "4726960b86950d5d",
   "lastOpenFiles": [
+    "infosoc/2025-1 seminario 1.pdf",
     "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
+    "Untitled.canvas",
+    "2025-04-25.md",
     "es2/prova 2/textos/cap6.pdf",
     "es2/prova 2/anotacoes/Aula 8 - Planejamento.md",
     "redes2/slides/08 - Segurança.pdf",
@@ -212,10 +214,7 @@
     "redes2/slides",
     "es2/prova 2/slides/AULA 09 - ESTIMAÇÃO DE ESFORÇO 1 - APF e PH.pdf",
     "es2/prova 2/slides/AULA 13 - GERENCIAMENTO DE CONFIGURAÇÃO E MUDANÇA.pdf",
-    "es2/prova 2/slides/AULA 12 - GERENCIAMENTO DE PROJETO.pdf",
     "conflict-files-obsidian-git.md",
-    "Untitled.canvas",
-    "2025-04-25.md",
     "es2/prova 1/anotacoes/Capítulo 1.md",
     "es2/prova 1/anotacoes/Capítulo 5.md",
     "es2/prova 1/alo.md",
