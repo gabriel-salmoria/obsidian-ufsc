@@ -14,10 +14,8 @@
               "type": "pdf",
               "state": {
                 "file": "es2/prova 2/textos/cap6.pdf",
-                "page": 2,
-                "left": -4,
-                "top": 467,
-                "zoom": 1.1
+                "page": 1,
+                "zoom": 1
               },
               "icon": "lucide-file-text",
               "title": "cap6"
@@ -96,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.50484466552734
+    "width": 296.50484466552734,
+    "collapsed": true
   },
   "right": {
     "id": "f422d6ad2d1f3b7e",
@@ -178,13 +177,13 @@
             }
           },
           {
-            "id": "e533d23d88f95edd",
+            "id": "f3afbf07d035d861",
             "type": "leaf",
             "state": {
-              "type": "copilot-chat-view",
+              "type": "smtcmp-chat-view",
               "state": {},
-              "icon": "message-square",
-              "title": "Copilot"
+              "icon": "wand-sparkles",
+              "title": "Smart composer chat"
             }
           }
         ],
@@ -206,17 +205,18 @@
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
-      "smart-composer:Open smart composer": false,
-      "copilot:Open Copilot Chat": false
+      "smart-composer:Open smart composer": false
     }
   },
-  "active": "e533d23d88f95edd",
+  "active": "4726960b86950d5d",
   "lastOpenFiles": [
+    "es2/prova 1/anotacoes/Capítulo 4.md",
+    "es2/prova 2/slides/AULA 12 - GERENCIAMENTO DE PROJETO.pdf",
+    "es2/prova 2/textos/cap6.pdf",
     "infosoc/2025-1 seminario 1.pdf",
     "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
     "Untitled.canvas",
     "2025-04-25.md",
-    "es2/prova 2/textos/cap6.pdf",
     "es2/prova 2/anotacoes/Aula 8 - Planejamento.md",
     "redes2/slides/08 - Segurança.pdf",
     "redes2/slides/01 - Introdução as Redes.pdf",
@@ -225,12 +225,10 @@
     "redes2/Untitled.md",
     "redes2/slides",
     "es2/prova 2/slides/AULA 09 - ESTIMAÇÃO DE ESFORÇO 1 - APF e PH.pdf",
-    "es2/prova 2/slides/AULA 13 - GERENCIAMENTO DE CONFIGURAÇÃO E MUDANÇA.pdf",
     "conflict-files-obsidian-git.md",
     "es2/prova 1/anotacoes/Capítulo 1.md",
     "es2/prova 1/anotacoes/Capítulo 5.md",
     "es2/prova 1/alo.md",
-    "es2/prova 1/anotacoes/Capítulo 4.md",
     "es2/prova 1/anotacoes/Capítulo 3.md",
     "es2/prova 1/teste do commit hell yeah.md",
     "obsidian-ufsc/es2/prova 1/Capítulo 5.md",

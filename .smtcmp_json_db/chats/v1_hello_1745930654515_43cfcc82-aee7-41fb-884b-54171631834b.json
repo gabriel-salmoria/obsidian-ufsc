@@ -1,0 +1,186 @@
+{
+  "id": "43cfcc82-aee7-41fb-884b-54171631834b",
+  "title": "hello",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "hello",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nhello\n\n"
+        }
+      ],
+      "id": "6f43a022-ea33-444b-a56d-56a50d0a08a7",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "es2/prova 2/textos/cap6.pdf"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "你好!\n",
+      "id": "82a9fe2a-14dd-4c02-ae9a-6cf1cafd6548",
+      "metadata": {
+        "model": {
+          "providerType": "gemini",
+          "providerId": "gemini",
+          "id": "gemini-2.0-flash-lite",
+          "model": "gemini-2.0-flash-lite"
+        },
+        "usage": {
+          "prompt_tokens": 434331,
+          "completion_tokens": 3,
+          "total_tokens": 434334
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "alo vc consegue ler o arquivo?",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nalo vc consegue ler o arquivo?\n\n"
+        }
+      ],
+      "id": "301e611b-e43f-4a99-a199-c1e23e77d590",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "es2/prova 2/textos/cap6.pdf"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "Sim, eu consigo ler o arquivo.\n",
+      "id": "fae305a8-583a-4eef-ab43-3cd5843f7f13",
+      "metadata": {
+        "model": {
+          "providerType": "gemini",
+          "providerId": "gemini",
+          "id": "gemini-2.0-flash-lite",
+          "model": "gemini-2.0-flash-lite"
+        },
+        "usage": {
+          "prompt_tokens": 434343,
+          "completion_tokens": 9,
+          "total_tokens": 434352
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "resuma o conteudo do arquivo, especialmente as 5 primeiras paginas",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nresuma o conteudo do arquivo, especialmente as 5 primeiras paginas\n\n"
+        }
+      ],
+      "id": "d4fc43ce-c1d4-4adb-a4af-72956b0dcdd0",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "es2/prova 2/textos/cap6.pdf"
+        }
+      ]
+    }
+  ],
+  "createdAt": 1745930428802,
+  "updatedAt": 1745930654515,
+  "schemaVersion": 1
+}
