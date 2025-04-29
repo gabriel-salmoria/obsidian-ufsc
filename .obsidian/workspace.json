@@ -13,14 +13,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
+                "file": "es2/prova 2/textos/cap6.pdf",
                 "page": 3,
-                "left": -4,
-                "top": 459,
+                "left": -214,
+                "top": 740,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
-              "title": "AULA 08 - PLANEJAMENTO"
+              "title": "cap6"
             }
           },
           {
@@ -30,16 +30,17 @@
               "type": "pdf",
               "state": {
                 "file": "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
-                "page": 3,
-                "left": -59,
-                "top": 295,
+                "page": 7,
+                "left": -160,
+                "top": 544,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
               "title": "AULA 08 - PLANEJAMENTO"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +97,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.50484466552734
+    "width": 296.50484466552734,
+    "collapsed": true
   },
   "right": {
     "id": "f422d6ad2d1f3b7e",
@@ -178,13 +180,13 @@
             }
           },
           {
-            "id": "f3afbf07d035d861",
+            "id": "144e7856982b61b3",
             "type": "leaf",
             "state": {
-              "type": "smtcmp-chat-view",
+              "type": "copilot-chat-view",
               "state": {},
-              "icon": "wand-sparkles",
-              "title": "Smart composer chat"
+              "icon": "message-square",
+              "title": "Copilot"
             }
           }
         ],
@@ -192,7 +194,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 406.5
+    "width": 387.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,14 +209,15 @@
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
-      "smart-composer:Open smart composer": false
+      "smart-composer:Open smart composer": false,
+      "copilot:Open Copilot Chat": false
     }
   },
-  "active": "f3afbf07d035d861",
+  "active": "31e163a05a160956",
   "lastOpenFiles": [
-    "es2/prova 1/anotacoes/Capítulo 2.md",
-    "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
     "es2/prova 2/textos/cap6.pdf",
+    "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
+    "es2/prova 1/anotacoes/Capítulo 2.md",
     "es2/prova 1/anotacoes/Capítulo 4.md",
     "es2/prova 2/slides/AULA 12 - GERENCIAMENTO DE PROJETO.pdf",
     "infosoc/2025-1 seminario 1.pdf",
