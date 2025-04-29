@@ -13,14 +13,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "redes2/slides/04 - Camada de aplicação.pdf",
-                "page": 1,
+                "file": "redes2/slides/01 - Introdução as Redes.pdf",
+                "page": 4,
                 "left": -55,
                 "top": 543,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
-              "title": "04 - Camada de aplicação"
+              "title": "01 - Introdução as Redes"
             }
           }
         ]
@@ -194,8 +194,11 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "4726960b86950d5d",
+  "active": "a95c37480f02ba08",
   "lastOpenFiles": [
+    "redes2/anotacoes",
+    "redes2/slides/03 - Arquiteturas.pdf",
+    "redes2/slides/04 - Camada de aplicação.pdf",
     "redes2/slides/01 - Introdução as Redes.pdf",
     "es2/prova 2/textos/cap6.pdf",
     "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
@@ -211,8 +214,6 @@
     "infosoc/seminário 1/textos/08 - (1970 a 1979).pdf",
     "redes2/anotacoes",
     "redes2/Untitled.md",
-    "redes2/slides",
-    "es2/prova 2/slides/AULA 09 - ESTIMAÇÃO DE ESFORÇO 1 - APF e PH.pdf",
     "conflict-files-obsidian-git.md",
     "es2/prova 1/anotacoes/Capítulo 1.md",
     "es2/prova 1/anotacoes/Capítulo 5.md",
