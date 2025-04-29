@@ -1,0 +1,56 @@
+{
+  "id": "c47d1526-2b37-4708-b33d-d84f7a626244",
+  "title": "hello",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "hello",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nhello\n\n"
+        }
+      ],
+      "id": "7a31c9e3-bca6-4325-a2e8-f8022b43a778",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "es2/prova 2/textos/cap6.pdf"
+        }
+      ]
+    }
+  ],
+  "createdAt": 1745929746373,
+  "updatedAt": 1745929919381,
+  "schemaVersion": 1
+}

@@ -15,8 +15,8 @@
               "state": {
                 "file": "es2/prova 2/textos/cap6.pdf",
                 "page": 2,
-                "left": -113,
-                "top": 610,
+                "left": -4,
+                "top": 467,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
@@ -158,12 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "es2/prova 2/textos/cap6.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of cap6"
             }
           },
           {
@@ -175,14 +176,23 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "e533d23d88f95edd",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 406.5,
-    "collapsed": true
+    "width": 406.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,10 +205,12 @@
       "obsidian-git:Open Git source control": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "smart-composer:Open smart composer": false,
+      "copilot:Open Copilot Chat": false
     }
   },
-  "active": "4726960b86950d5d",
+  "active": "e533d23d88f95edd",
   "lastOpenFiles": [
     "infosoc/2025-1 seminario 1.pdf",
     "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
