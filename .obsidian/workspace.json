@@ -14,9 +14,9 @@
               "type": "pdf",
               "state": {
                 "file": "es2/prova 2/textos/cap6.pdf",
-                "page": 3,
-                "left": -214,
-                "top": 740,
+                "page": 2,
+                "left": -4,
+                "top": 19,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
@@ -30,17 +30,16 @@
               "type": "pdf",
               "state": {
                 "file": "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
-                "page": 7,
+                "page": 5,
                 "left": -160,
-                "top": 544,
+                "top": 545,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
               "title": "AULA 08 - PLANEJAMENTO"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,8 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.50484466552734,
-    "collapsed": true
+    "width": 296.50484466552734
   },
   "right": {
     "id": "f422d6ad2d1f3b7e",
@@ -194,8 +192,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 387.5,
-    "collapsed": true
+    "width": 475.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -213,10 +210,10 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "31e163a05a160956",
+  "active": "4726960b86950d5d",
   "lastOpenFiles": [
-    "es2/prova 2/textos/cap6.pdf",
     "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
+    "es2/prova 2/textos/cap6.pdf",
     "es2/prova 1/anotacoes/Capítulo 2.md",
     "es2/prova 1/anotacoes/Capítulo 4.md",
     "es2/prova 2/slides/AULA 12 - GERENCIAMENTO DE PROJETO.pdf",
