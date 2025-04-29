@@ -13,14 +13,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "redes2/slides/01 - Introdução as Redes.pdf",
-                "page": 21,
-                "left": -3,
-                "top": 388,
+                "file": "redes2/slides/03 - Arquiteturas.pdf",
+                "page": 1,
+                "left": -55,
+                "top": 543,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
-              "title": "01 - Introdução as Redes"
+              "title": "03 - Arquiteturas"
             }
           }
         ]
@@ -176,7 +176,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 475.5
+    "width": 475.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,12 +195,13 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "97a888187b26e10b",
+  "active": "4726960b86950d5d",
   "lastOpenFiles": [
+    "redes2/slides/02 - Topologias.pdf",
+    "redes2/slides/01 - Introdução as Redes.pdf",
     "redes2/anotacoes",
     "redes2/slides/03 - Arquiteturas.pdf",
     "redes2/slides/04 - Camada de aplicação.pdf",
-    "redes2/slides/01 - Introdução as Redes.pdf",
     "es2/prova 2/textos/cap6.pdf",
     "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
     "es2/prova 2/anotacoes/Aula 8 - Planejamento.md",
@@ -212,7 +214,6 @@
     "2025-04-25.md",
     "redes2/slides/08 - Segurança.pdf",
     "infosoc/seminário 1/textos/08 - (1970 a 1979).pdf",
-    "redes2/anotacoes",
     "redes2/Untitled.md",
     "conflict-files-obsidian-git.md",
     "es2/prova 1/anotacoes/Capítulo 1.md",
