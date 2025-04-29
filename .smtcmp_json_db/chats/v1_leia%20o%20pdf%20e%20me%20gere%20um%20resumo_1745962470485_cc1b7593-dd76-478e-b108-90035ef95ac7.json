@@ -1,0 +1,56 @@
+{
+  "id": "cc1b7593-dd76-478e-b108-90035ef95ac7",
+  "title": "leia o pdf e me gere um resumo",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "leia o pdf e me gere um resumo",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nleia o pdf e me gere um resumo\n\n"
+        }
+      ],
+      "id": "5c4b47ec-f4c2-4750-9b05-82a331029476",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "redes2/slides/01 - Introdução as Redes.pdf"
+        }
+      ]
+    }
+  ],
+  "createdAt": 1745962470485,
+  "updatedAt": 1745962470485,
+  "schemaVersion": 1
+}

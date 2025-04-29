@@ -12,7 +12,7 @@
   "azureOpenAIApiDeploymentName": "",
   "azureOpenAIApiVersion": "",
   "azureOpenAIApiEmbeddingDeploymentName": "",
-  "googleApiKey": "",
+  "googleApiKey": "AIzaSyDobwTzUWcOIQu7dqQBfvsWHVx3q008VeY",
   "openRouterAiApiKey": "",
   "xaiApiKey": "",
   "mistralApiKey": "",
@@ -182,7 +182,10 @@
       "baseUrl": "",
       "apiKey": "AIzaSyDobwTzUWcOIQu7dqQBfvsWHVx3q008VeY",
       "isEmbeddingModel": false,
-      "capabilities": [],
+      "capabilities": [
+        "reasoning",
+        "vision"
+      ],
       "stream": true,
       "displayName": "gemini-2.5-flash-preview"
     }
@@ -227,6 +230,14 @@
       "core": true
     },
     {
+      "name": "text-embedding-004",
+      "provider": "google",
+      "enabled": true,
+      "isBuiltIn": true,
+      "isEmbeddingModel": true,
+      "enableCors": true
+    },
+    {
       "name": "text-embedding-3-large",
       "provider": "openai",
       "enabled": true,
@@ -236,13 +247,6 @@
     {
       "name": "embed-multilingual-light-v3.0",
       "provider": "cohereai",
-      "enabled": true,
-      "isBuiltIn": true,
-      "isEmbeddingModel": true
-    },
-    {
-      "name": "text-embedding-004",
-      "provider": "google",
       "enabled": true,
       "isBuiltIn": true,
       "isEmbeddingModel": true

@@ -14,9 +14,9 @@
               "type": "pdf",
               "state": {
                 "file": "redes2/slides/01 - Introdução as Redes.pdf",
-                "page": 26,
+                "page": 21,
                 "left": -3,
-                "top": 543,
+                "top": 380,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
@@ -162,13 +162,13 @@
             }
           },
           {
-            "id": "144e7856982b61b3",
+            "id": "cf8433de147b7753",
             "type": "leaf",
             "state": {
-              "type": "copilot-chat-view",
+              "type": "smtcmp-chat-view",
               "state": {},
-              "icon": "message-square",
-              "title": "Copilot"
+              "icon": "wand-sparkles",
+              "title": "Smart composer chat"
             }
           }
         ],
@@ -190,10 +190,11 @@
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
-      "copilot:Open Copilot Chat": false
+      "copilot:Open Copilot Chat": false,
+      "smart-composer:Open smart composer": false
     }
   },
-  "active": "144e7856982b61b3",
+  "active": "cf8433de147b7753",
   "lastOpenFiles": [
     "redes2/anotacoes",
     "redes2/slides/03 - Arquiteturas.pdf",
