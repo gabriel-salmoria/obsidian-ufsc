@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.50484466552734,
-    "collapsed": true
+    "width": 296.50484466552734
   },
   "right": {
     "id": "f422d6ad2d1f3b7e",
@@ -208,7 +207,7 @@
       "smart-composer:Open smart composer": false
     }
   },
-  "active": "4726960b86950d5d",
+  "active": "f3afbf07d035d861",
   "lastOpenFiles": [
     "es2/prova 1/anotacoes/Capítulo 4.md",
     "es2/prova 2/slides/AULA 12 - GERENCIAMENTO DE PROJETO.pdf",

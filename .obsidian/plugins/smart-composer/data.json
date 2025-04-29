@@ -12,7 +12,7 @@
     {
       "type": "gemini",
       "id": "gemini",
-      "apiKey": "AIzaSyDobwTzUWcOIQu7dqQBfvsWHVx3q008VeY"
+      "apiKey": "AIzaSyBArfblmj8jYJtPhwgLEm5H28o9VY6JvP4"
     },
     {
       "type": "deepseek",
@@ -213,6 +213,13 @@
       "providerId": "morph",
       "id": "morph-v0",
       "model": "morph-v0"
+    },
+    {
+      "providerType": "gemini",
+      "providerId": "gemini",
+      "id": "gemini-2.5-flash-preview",
+      "model": "gemini-2.5-flash-preview-04-17",
+      "promptLevel": 1
     }
   ],
   "embeddingModels": [
@@ -259,7 +266,7 @@
       "dimension": 1024
     }
   ],
-  "chatModelId": "gemini-2.0-flash",
+  "chatModelId": "gemini-2.5-flash-preview",
   "applyModelId": "gpt-4o-mini",
   "embeddingModelId": "openai/text-embedding-3-small",
   "systemPrompt": "",

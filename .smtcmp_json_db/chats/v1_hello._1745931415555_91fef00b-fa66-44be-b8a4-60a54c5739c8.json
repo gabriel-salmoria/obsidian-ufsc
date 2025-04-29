@@ -1,0 +1,164 @@
+{
+  "id": "91fef00b-fa66-44be-b8a4-60a54c5739c8",
+  "title": "hello.",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "hello.",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nhello.\n\n"
+        }
+      ],
+      "id": "f07e6a7d-bfe4-4dd4-a152-0e46f6e9a093",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "es2/prova 2/textos/cap6.pdf"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "heelo",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nheelo\n\n"
+        }
+      ],
+      "id": "4df50b29-69b2-4424-8e68-238dbd1fa540",
+      "mentionables": []
+    },
+    {
+      "role": "assistant",
+      "content": "Hello!",
+      "id": "f51d1cf5-7e45-4ec7-b2b5-22633e578d4d",
+      "metadata": {
+        "model": {
+          "providerType": "gemini",
+          "providerId": "gemini",
+          "id": "gemini-2.5-flash-preview",
+          "model": "gemini-2.5-flash-preview-04-17",
+          "promptLevel": 1
+        },
+        "usage": {
+          "prompt_tokens": 427,
+          "completion_tokens": 2,
+          "total_tokens": 457
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "are you able to read pdfs?",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nare you able to read pdfs?\n\n"
+        }
+      ],
+      "id": "876e46be-9f0e-4630-ba41-d625c3b6792c",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "es2/prova 2/textos/cap6.pdf"
+        }
+      ]
+    }
+  ],
+  "createdAt": 1745931354633,
+  "updatedAt": 1745931415555,
+  "schemaVersion": 1
+}
