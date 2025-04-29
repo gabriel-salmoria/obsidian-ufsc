@@ -13,42 +13,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "es2/prova 2/textos/cap6.pdf",
-                "page": 1,
-                "zoom": 1
-              },
-              "icon": "lucide-file-text",
-              "title": "cap6"
-            }
-          },
-          {
-            "id": "31e163a05a160956",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
-                "page": 21,
-                "left": -59,
-                "top": 544,
+                "file": "redes2/slides/04 - Camada de aplicação.pdf",
+                "page": 2,
+                "left": -40,
+                "top": 54,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
-              "title": "AULA 08 - PLANEJAMENTO"
-            }
-          },
-          {
-            "id": "0feae9983b7d7d91",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "es2/prova 2/anotacoes/Aula 8 - Planejamento.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Aula 8 - Planejamento"
+              "title": "04 - Camada de aplicação"
             }
           }
         ]
@@ -108,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.50484466552734
+    "width": 296.50484466552734,
+    "collapsed": true
   },
   "right": {
     "id": "f422d6ad2d1f3b7e",
@@ -224,8 +197,9 @@
   },
   "active": "4726960b86950d5d",
   "lastOpenFiles": [
-    "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
+    "redes2/slides/01 - Introdução as Redes.pdf",
     "es2/prova 2/textos/cap6.pdf",
+    "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
     "es2/prova 2/anotacoes/Aula 8 - Planejamento.md",
     "cap6.md",
     "es2/prova 1/anotacoes/Capítulo 2.md",
@@ -235,7 +209,6 @@
     "Untitled.canvas",
     "2025-04-25.md",
     "redes2/slides/08 - Segurança.pdf",
-    "redes2/slides/01 - Introdução as Redes.pdf",
     "infosoc/seminário 1/textos/08 - (1970 a 1979).pdf",
     "redes2/anotacoes",
     "redes2/Untitled.md",
