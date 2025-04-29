@@ -1,0 +1,235 @@
+{
+  "id": "9804df6d-6a79-4f6a-92f9-be7adf27f928",
+  "title": "hello",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "hello",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "## Potentially Relevant Snippets from the current vault\n```cap6.md\n3|![[es2/prova 2/textos/cap6.pdf]]\n```\n```es2/prova 2/anotacoes/Aula 8 - Planejamento.md\n13|## Business Model Canvas\r\n14|\r\n15|O Business Model Canvas é uma ferramenta visual que organiza ideias de negócio em áreas específicas, facilitando a concepção de um projeto. No lado direito, são abordados clientes, proposta de valor e canais de entrega. No lado esquerdo, recursos, atividades e parcerias necessárias para viabilizar a proposta. Segmentos de clientes e a proposta de valor devem ser claramente definidos, priorizando necessidades e tipos de relacionamento. Fontes de receita, estrutura de custos e canais de comunicação também são estruturados no Canvas.\r\n16|\r\n17|---\n```\n```es2/prova 2/anotacoes/Aula 8 - Planejamento.md\n7|## Termo de Abertura (Project Charter)\r\n8|\r\n9|O termo de abertura oficializa o início do projeto. Segundo o PMBOK, ele deve conter informações como: objetivo e justificativa do projeto, descrição de alto nível do produto, requisitos de alto nível, nomeação do gerente de projeto, cronograma de marcos, definição de papéis e responsabilidades, premissas, restrições, estudo de viabilidade e orçamento preliminar. Sua aprovação por um gerente sênior confere autoridade ao gerente de projeto para iniciar os trabalhos.\r\n10|\r\n11|---\n```\n```es2/prova 1/anotacoes/Capítulo 4.md\n3|## Filosofia dos Métodos Ágeis\r\n4|\r\n5|- Foco em **valores humanos, sociais e ambientais**.\r\n6|- Menos burocracia, **mais pragmatismo e resultados**.\r\n7|- Importância de **adaptação**, ao invés de seguir uma \"receita de bolo\".\r\n8|- Baseados no **Manifesto Ágil** (2001), que valoriza:\r\n9|  - **Indivíduos e interações** sobre processos e ferramentas.\r\n10|  - **Software funcionando** sobre documentação abrangente.\r\n11|  - **Colaboração com o cliente** sobre negociação de contratos.\r\n12|  - **Resposta à mudança** sobre seguir um plano.\n```\n```es2/prova 1/anotacoes/Capítulo 1.md\n65|## 1.5 Evolução da Engenharia de Software\r\n66|\r\n67|- **Décadas de 1930 a 1950:** Computadores sem software.\r\n68|- **1960-1980:** \"Crise do software\" – foco em prazos, orçamentos e qualidade.\r\n69|- **Exemplo:** Projeto OS/360 da IBM (Brooks) revelou a importância da arquitetura e planejamento.\r\n70|- **Décadas seguintes:** Tentativas de soluções mágicas (CASE, prototipação, formalismos).\r\n71|- **Anos 1990:** Ascensão da internet e da orientação a objetos.\r\n72|- **Anos 2000:** Surgimento dos métodos ágeis – foco em equipes pequenas e eficientes.\r\n73|- **Hoje:** Corpo de conhecimentos sistematizado com SWEBOK (ISO/IEC TR 19759).\n```\n```es2/prova 1/anotacoes/Capítulo 5.md\n108|## 5.6 OUM – Oracle Unified Method\r\n109|\r\n110|Implementação do UP voltada ao ecossistema Oracle.\r\n111|\r\n112|### Fases:\r\n113|- Inception, Elaboration, Construction, Transition, Production\r\n114|\r\n115|### Disciplinas adicionais:\r\n116|- Gerência de performance, Arquitetura técnica, Conversão de dados, Documentação, Adoção e aprendizado, etc.\r\n117|\r\n118|---\r\n119|\r\n120|## 5.7 DAD – Disciplined Agile Delivery\r\n121|\r\n122|Framework ágil híbrido, orientado a pessoas, aprendizado e entrega de valor.\r\n123|\r\n124|### Características:\r\n125|- Baseado em Scrum, XP, UP, Lean, Kanban\r\n126|- Mais papéis (primários e secundários)\r\n127|- Centrado em objetivos e escalável\r\n128|\r\n129|---\r\n130|\r\n131|## 5.8 OpenUP – Open Unified Process\r\n132|\r\n133|Versão leve e aberta do UP mantida pela Eclipse Foundation.\r\n134|\r\n135|### Características:\r\n136|- Baixa cerimônia\r\n137|- Independente de ferramenta\r\n138|- Adota incrementalmente práticas do UP\r\n139|- Princípios: colaboração, evolução, balanceamento de prioridades, foco em arquitetura\r\n140|\r\n141|---\n```\n```es2/prova 2/anotacoes/Aula 8 - Planejamento.md\n19|## Declaração de Escopo\r\n20|\r\n21|A declaração de escopo é o documento que define os objetivos claros do projeto. Diferente do termo de abertura, ela detalha o produto final esperado e lista as entregas principais. Os objetivos devem ser quantificáveis, com métricas claras de prazo, custo e qualidade. Critérios de aceitação são definidos aqui. Não pode haver novos requisitos além dos previstos no termo de abertura; qualquer mudança exige renegociação.\r\n22|\r\n23|---\r\n24|\r\n25|## Atividades do Planejamento Geral\r\n26|\r\n27|O planejamento geral engloba a estimativa do esforço total, cálculo da duração linear e tamanho médio da equipe, além da duração e esforço de cada fase. Também se estima a duração e número de iterações. Essas atividades são fundamentais para criar um cronograma viável e ajustar expectativas de prazo e custo do projeto.\r\n28|\r\n29|---\n```\n```cap6.md\n1|Wazlawick, R. S. Engenharia de Software: Conceitos e práticas, 2ª. ed. Elsevier, 2019. • Entrega. Como nosso produto ou serviço alcançará o cliente? • Pós-venda. Como fornecemos apoio ao nosso cliente após a entrega do produto ou serviço. No campo de relacionamento com clientes a ideia é descrever as formas como vamos nos relacio- nar com cada segmento de cliente. Estas formas podem variar desde assistência pessoal persona- lizada, até comunidades de práticas e serviços automatizados. No campo fontes de receita deve-se indicar como cada segmento de cliente vai colaborar para a geração de receita. É possível gerar receita a partir de taxas de uso ou assinatura, venda de recur- sos, empréstimos, licenciamentos, comissões e até anúncios. Os recursos principais indicam as principais necessidades físicas, humanas, intelectuais e fi- nanceiras para a realização do projeto. As atividades-chave estão relacionadas às principais iniciativas necessárias para que o produto seja construído e/ou\n```\n```cap6.md\n1|esta publicação (PMI, 2017), o termo de abertura deverá conter ou referenciar documentos externos com as seguintes informa- ções: • Objetivo e justificativa do projeto. Por que vamos investir neste projeto? • Descrição em alto nível do projeto. O que vamos fazer? • Requisitos de alto nível que satisfazem os principais interessados. A quem vamos atender e que valor vamos entregar? • Nomeação do gerente de projeto e definição do nível de autoridade conferida. Por exemplo, ele pode usar os recursos sem aprovação superior? Pode contratar pessoal? • Cronograma de marcos (milestones) resumido. Quando vamos entregar o que? • Definição dos papéis e responsabilidades das partes interessadas. Quem faz o que? • Organização funcional do projeto. Quem responde a quem? • Premissas ou hipóteses. São perguntas para as quais ainda não se tem resposta, mas que são aceitas, a princípio, para iniciar o projeto. Por exemplo, haverá um especialista disponível na tecnologia X?. • Restrições. Quais limites\n```\n```es2/prova 1/anotacoes/Capítulo 5.md\n79|## 5.4 EUP – Enterprise Unified Process\r\n80|\r\n81|Extensão do RUP para o ciclo de vida organizacional completo.\r\n82|\r\n83|### Novas fases:\r\n84|- **Produção:** manutenção e evolução do sistema em uso.\r\n85|- **Desativação:** retirada planejada do sistema.\r\n86|\r\n87|### Novas disciplinas:\r\n88|- Operação e suporte\r\n89|- Modelagem de negócio da empresa\r\n90|- Gerência de portfólio\r\n91|- Arquitetura da empresa\r\n92|- Reuso estratégico\r\n93|- Gerência de pessoas\r\n94|- Administração\r\n95|- Melhoria de processo de software\r\n96|\r\n97|---\r\n98|\r\n99|## 5.5 RUP-SE – RUP para Engenharia de Sistemas\r\n100|\r\n101|Voltado a sistemas complexos com software, hardware e processos humanos.\r\n102|\r\n103|### Ponto de vista da arquitetura:\r\n104|- Empresa, Computação, Engenharia, Informação, Processo\r\n105|\r\n106|---\n```\n\n\n\nhello\n\n"
+        }
+      ],
+      "id": "8488f7ec-3b80-4a4e-99c0-4cbb93d9f4d3",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "redes2/slides/01 - Introdução as Redes.pdf"
+        }
+      ],
+      "similaritySearchResults": [
+        {
+          "id": 120,
+          "path": "cap6.md",
+          "mtime": 1745958385834,
+          "content": "![[es2/prova 2/textos/cap6.pdf]]",
+          "model": "gemini/text-embedding-004",
+          "dimension": 768,
+          "metadata": {
+            "endLine": 3,
+            "startLine": 3
+          },
+          "similarity": 0.36707916740773117
+        },
+        {
+          "id": 38,
+          "path": "es2/prova 2/anotacoes/Aula 8 - Planejamento.md",
+          "mtime": 1745958385934,
+          "content": "## Business Model Canvas\r\n\r\nO Business Model Canvas é uma ferramenta visual que organiza ideias de negócio em áreas específicas, facilitando a concepção de um projeto. No lado direito, são abordados clientes, proposta de valor e canais de entrega. No lado esquerdo, recursos, atividades e parcerias necessárias para viabilizar a proposta. Segmentos de clientes e a proposta de valor devem ser claramente definidos, priorizando necessidades e tipos de relacionamento. Fontes de receita, estrutura de custos e canais de comunicação também são estruturados no Canvas.\r\n\r\n---",
+          "model": "gemini/text-embedding-004",
+          "dimension": 768,
+          "metadata": {
+            "endLine": 17,
+            "startLine": 13
+          },
+          "similarity": 0.3565171378915357
+        },
+        {
+          "id": 37,
+          "path": "es2/prova 2/anotacoes/Aula 8 - Planejamento.md",
+          "mtime": 1745958385934,
+          "content": "## Termo de Abertura (Project Charter)\r\n\r\nO termo de abertura oficializa o início do projeto. Segundo o PMBOK, ele deve conter informações como: objetivo e justificativa do projeto, descrição de alto nível do produto, requisitos de alto nível, nomeação do gerente de projeto, cronograma de marcos, definição de papéis e responsabilidades, premissas, restrições, estudo de viabilidade e orçamento preliminar. Sua aprovação por um gerente sênior confere autoridade ao gerente de projeto para iniciar os trabalhos.\r\n\r\n---",
+          "model": "gemini/text-embedding-004",
+          "dimension": 768,
+          "metadata": {
+            "endLine": 11,
+            "startLine": 7
+          },
+          "similarity": 0.35604860139134353
+        },
+        {
+          "id": 8,
+          "path": "es2/prova 1/anotacoes/Capítulo 4.md",
+          "mtime": 1745958385881,
+          "content": "## Filosofia dos Métodos Ágeis\r\n\r\n- Foco em **valores humanos, sociais e ambientais**.\r\n- Menos burocracia, **mais pragmatismo e resultados**.\r\n- Importância de **adaptação**, ao invés de seguir uma \"receita de bolo\".\r\n- Baseados no **Manifesto Ágil** (2001), que valoriza:\r\n  - **Indivíduos e interações** sobre processos e ferramentas.\r\n  - **Software funcionando** sobre documentação abrangente.\r\n  - **Colaboração com o cliente** sobre negociação de contratos.\r\n  - **Resposta à mudança** sobre seguir um plano.",
+          "model": "gemini/text-embedding-004",
+          "dimension": 768,
+          "metadata": {
+            "endLine": 12,
+            "startLine": 3
+          },
+          "similarity": 0.3559855739487343
+        },
+        {
+          "id": 33,
+          "path": "es2/prova 1/anotacoes/Capítulo 1.md",
+          "mtime": 1745958385881,
+          "content": "## 1.5 Evolução da Engenharia de Software\r\n\r\n- **Décadas de 1930 a 1950:** Computadores sem software.\r\n- **1960-1980:** \"Crise do software\" – foco em prazos, orçamentos e qualidade.\r\n- **Exemplo:** Projeto OS/360 da IBM (Brooks) revelou a importância da arquitetura e planejamento.\r\n- **Décadas seguintes:** Tentativas de soluções mágicas (CASE, prototipação, formalismos).\r\n- **Anos 1990:** Ascensão da internet e da orientação a objetos.\r\n- **Anos 2000:** Surgimento dos métodos ágeis – foco em equipes pequenas e eficientes.\r\n- **Hoje:** Corpo de conhecimentos sistematizado com SWEBOK (ISO/IEC TR 19759).",
+          "model": "gemini/text-embedding-004",
+          "dimension": 768,
+          "metadata": {
+            "endLine": 73,
+            "startLine": 65
+          },
+          "similarity": 0.3521388017652476
+        },
+        {
+          "id": 6,
+          "path": "es2/prova 1/anotacoes/Capítulo 5.md",
+          "mtime": 1745958385897,
+          "content": "## 5.6 OUM – Oracle Unified Method\r\n\r\nImplementação do UP voltada ao ecossistema Oracle.\r\n\r\n### Fases:\r\n- Inception, Elaboration, Construction, Transition, Production\r\n\r\n### Disciplinas adicionais:\r\n- Gerência de performance, Arquitetura técnica, Conversão de dados, Documentação, Adoção e aprendizado, etc.\r\n\r\n---\r\n\r\n## 5.7 DAD – Disciplined Agile Delivery\r\n\r\nFramework ágil híbrido, orientado a pessoas, aprendizado e entrega de valor.\r\n\r\n### Características:\r\n- Baseado em Scrum, XP, UP, Lean, Kanban\r\n- Mais papéis (primários e secundários)\r\n- Centrado em objetivos e escalável\r\n\r\n---\r\n\r\n## 5.8 OpenUP – Open Unified Process\r\n\r\nVersão leve e aberta do UP mantida pela Eclipse Foundation.\r\n\r\n### Características:\r\n- Baixa cerimônia\r\n- Independente de ferramenta\r\n- Adota incrementalmente práticas do UP\r\n- Princípios: colaboração, evolução, balanceamento de prioridades, foco em arquitetura\r\n\r\n---",
+          "model": "gemini/text-embedding-004",
+          "dimension": 768,
+          "metadata": {
+            "endLine": 141,
+            "startLine": 108
+          },
+          "similarity": 0.3437290185178088
+        },
+        {
+          "id": 39,
+          "path": "es2/prova 2/anotacoes/Aula 8 - Planejamento.md",
+          "mtime": 1745958385934,
+          "content": "## Declaração de Escopo\r\n\r\nA declaração de escopo é o documento que define os objetivos claros do projeto. Diferente do termo de abertura, ela detalha o produto final esperado e lista as entregas principais. Os objetivos devem ser quantificáveis, com métricas claras de prazo, custo e qualidade. Critérios de aceitação são definidos aqui. Não pode haver novos requisitos além dos previstos no termo de abertura; qualquer mudança exige renegociação.\r\n\r\n---\r\n\r\n## Atividades do Planejamento Geral\r\n\r\nO planejamento geral engloba a estimativa do esforço total, cálculo da duração linear e tamanho médio da equipe, além da duração e esforço de cada fase. Também se estima a duração e número de iterações. Essas atividades são fundamentais para criar um cronograma viável e ajustar expectativas de prazo e custo do projeto.\r\n\r\n---",
+          "model": "gemini/text-embedding-004",
+          "dimension": 768,
+          "metadata": {
+            "endLine": 29,
+            "startLine": 19
+          },
+          "similarity": 0.3432628933176949
+        },
+        {
+          "id": 66,
+          "path": "cap6.md",
+          "mtime": 1745958385834,
+          "content": "Wazlawick, R. S. Engenharia de Software: Conceitos e práticas, 2ª. ed. Elsevier, 2019. • Entrega. Como nosso produto ou serviço alcançará o cliente? • Pós-venda. Como fornecemos apoio ao nosso cliente após a entrega do produto ou serviço. No campo de relacionamento com clientes a ideia é descrever as formas como vamos nos relacio- nar com cada segmento de cliente. Estas formas podem variar desde assistência pessoal persona- lizada, até comunidades de práticas e serviços automatizados. No campo fontes de receita deve-se indicar como cada segmento de cliente vai colaborar para a geração de receita. É possível gerar receita a partir de taxas de uso ou assinatura, venda de recur- sos, empréstimos, licenciamentos, comissões e até anúncios. Os recursos principais indicam as principais necessidades físicas, humanas, intelectuais e fi- nanceiras para a realização do projeto. As atividades-chave estão relacionadas às principais iniciativas necessárias para que o produto seja construído e/ou",
+          "model": "gemini/text-embedding-004",
+          "dimension": 768,
+          "metadata": {
+            "endLine": 1,
+            "startLine": 1
+          },
+          "similarity": 0.34002312842076343
+        },
+        {
+          "id": 61,
+          "path": "cap6.md",
+          "mtime": 1745958385834,
+          "content": "esta publicação (PMI, 2017), o termo de abertura deverá conter ou referenciar documentos externos com as seguintes informa- ções: • Objetivo e justificativa do projeto. Por que vamos investir neste projeto? • Descrição em alto nível do projeto. O que vamos fazer? • Requisitos de alto nível que satisfazem os principais interessados. A quem vamos atender e que valor vamos entregar? • Nomeação do gerente de projeto e definição do nível de autoridade conferida. Por exemplo, ele pode usar os recursos sem aprovação superior? Pode contratar pessoal? • Cronograma de marcos (milestones) resumido. Quando vamos entregar o que? • Definição dos papéis e responsabilidades das partes interessadas. Quem faz o que? • Organização funcional do projeto. Quem responde a quem? • Premissas ou hipóteses. São perguntas para as quais ainda não se tem resposta, mas que são aceitas, a princípio, para iniciar o projeto. Por exemplo, haverá um especialista disponível na tecnologia X?. • Restrições. Quais limites",
+          "model": "gemini/text-embedding-004",
+          "dimension": 768,
+          "metadata": {
+            "endLine": 1,
+            "startLine": 1
+          },
+          "similarity": 0.3365236018921052
+        },
+        {
+          "id": 5,
+          "path": "es2/prova 1/anotacoes/Capítulo 5.md",
+          "mtime": 1745958385897,
+          "content": "## 5.4 EUP – Enterprise Unified Process\r\n\r\nExtensão do RUP para o ciclo de vida organizacional completo.\r\n\r\n### Novas fases:\r\n- **Produção:** manutenção e evolução do sistema em uso.\r\n- **Desativação:** retirada planejada do sistema.\r\n\r\n### Novas disciplinas:\r\n- Operação e suporte\r\n- Modelagem de negócio da empresa\r\n- Gerência de portfólio\r\n- Arquitetura da empresa\r\n- Reuso estratégico\r\n- Gerência de pessoas\r\n- Administração\r\n- Melhoria de processo de software\r\n\r\n---\r\n\r\n## 5.5 RUP-SE – RUP para Engenharia de Sistemas\r\n\r\nVoltado a sistemas complexos com software, hardware e processos humanos.\r\n\r\n### Ponto de vista da arquitetura:\r\n- Empresa, Computação, Engenharia, Informação, Processo\r\n\r\n---",
+          "model": "gemini/text-embedding-004",
+          "dimension": 768,
+          "metadata": {
+            "endLine": 106,
+            "startLine": 79
+          },
+          "similarity": 0.3317132127552169
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "vc pode ler pdfs?",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nvc pode ler pdfs?\n\n"
+        }
+      ],
+      "id": "092a220e-ec50-42a4-8b86-a55de66afc6b",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "redes2/slides/01 - Introdução as Redes.pdf"
+        }
+      ]
+    }
+  ],
+  "createdAt": 1745962567064,
+  "updatedAt": 1745962790758,
+  "schemaVersion": 1
+}
