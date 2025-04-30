@@ -14,9 +14,9 @@
               "type": "pdf",
               "state": {
                 "file": "redes2/slides/01 - Introdução as Redes.pdf",
-                "page": 22,
+                "page": 94,
                 "left": -55,
-                "top": 12,
+                "top": 547,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
@@ -196,11 +196,11 @@
   },
   "active": "4726960b86950d5d",
   "lastOpenFiles": [
+    "redes2/slides/02 - Topologias.pdf",
     "redes2/slides/04 - Camada de aplicação.pdf",
     "redes2/slides/01 - Introdução as Redes.pdf",
     "redes2/slides/03 - Arquiteturas.pdf",
     "cap6.md",
-    "redes2/slides/02 - Topologias.pdf",
     "redes2/anotacoes",
     "es2/prova 2/textos/cap6.pdf",
     "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
