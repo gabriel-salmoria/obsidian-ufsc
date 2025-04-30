@@ -13,14 +13,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "redes2/slides/03 - Arquiteturas.pdf",
-                "page": 82,
+                "file": "redes2/slides/04 - Camada de aplicação.pdf",
+                "page": 17,
                 "left": -55,
-                "top": 107,
+                "top": 547,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
-              "title": "03 - Arquiteturas"
+              "title": "04 - Camada de aplicação"
             }
           }
         ]
@@ -196,10 +196,14 @@
   },
   "active": "4726960b86950d5d",
   "lastOpenFiles": [
+    "redes2/slides/05 - Camada de transporte.pdf",
+    "redes2/slides/08 - Segurança.pdf",
+    "redes2/slides/07 - Gerenciamento de Rede.pdf",
+    "redes2/slides/06 - Camada de Rede.pdf",
+    "redes2/slides/03 - Arquiteturas.pdf",
     "redes2/slides/01 - Introdução as Redes.pdf",
     "redes2/slides/02 - Topologias.pdf",
     "redes2/slides/04 - Camada de aplicação.pdf",
-    "redes2/slides/03 - Arquiteturas.pdf",
     "cap6.md",
     "redes2/anotacoes",
     "es2/prova 2/textos/cap6.pdf",
@@ -207,11 +211,8 @@
     "es2/prova 2/anotacoes/Aula 8 - Planejamento.md",
     "es2/prova 1/anotacoes/Capítulo 2.md",
     "es2/prova 1/anotacoes/Capítulo 4.md",
-    "es2/prova 2/slides/AULA 12 - GERENCIAMENTO DE PROJETO.pdf",
-    "infosoc/2025-1 seminario 1.pdf",
     "Untitled.canvas",
     "2025-04-25.md",
-    "redes2/slides/08 - Segurança.pdf",
     "redes2/Untitled.md",
     "conflict-files-obsidian-git.md",
     "es2/prova 1/anotacoes/Capítulo 1.md",
