@@ -13,14 +13,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "redes2/slides/01 - Introdução as Redes.pdf",
-                "page": 94,
+                "file": "redes2/slides/03 - Arquiteturas.pdf",
+                "page": 82,
                 "left": -55,
-                "top": 547,
+                "top": 107,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
-              "title": "01 - Introdução as Redes"
+              "title": "03 - Arquiteturas"
             }
           }
         ]
@@ -196,9 +196,9 @@
   },
   "active": "4726960b86950d5d",
   "lastOpenFiles": [
+    "redes2/slides/01 - Introdução as Redes.pdf",
     "redes2/slides/02 - Topologias.pdf",
     "redes2/slides/04 - Camada de aplicação.pdf",
-    "redes2/slides/01 - Introdução as Redes.pdf",
     "redes2/slides/03 - Arquiteturas.pdf",
     "cap6.md",
     "redes2/anotacoes",
