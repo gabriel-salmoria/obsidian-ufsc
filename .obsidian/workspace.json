@@ -11,16 +11,14 @@
             "id": "4726960b86950d5d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "distribuida/Unidade 1/01 - Introdução.pdf",
-                "page": 1,
-                "left": -138,
-                "top": 599,
-                "zoom": 1.1
+                "file": "cap6.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "01 - Introdução"
+              "icon": "lucide-file",
+              "title": "cap6"
             }
           }
         ]
@@ -194,8 +192,9 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "4726960b86950d5d",
+  "active": "a95c37480f02ba08",
   "lastOpenFiles": [
+    "distribuida/Unidade 1/01 - Introdução.pdf",
     "redes2/slides/02 - Topologias.pdf",
     "redes2/slides/01 - Introdução as Redes.pdf",
     "redes2/slides/04 - Camada de aplicação.pdf",
@@ -207,7 +206,6 @@
     "cap6.md",
     "redes2/anotacoes",
     "es2/prova 2/textos/cap6.pdf",
-    "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
     "es2/prova 2/anotacoes/Aula 8 - Planejamento.md",
     "es2/prova 1/anotacoes/Capítulo 2.md",
     "es2/prova 1/anotacoes/Capítulo 4.md",
