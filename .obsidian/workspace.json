@@ -8,22 +8,39 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4726960b86950d5d",
+            "id": "98f17ebbd86e3021",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "redes2/slides/03 - Arquiteturas.pdf",
-                "page": 76,
-                "left": -55,
-                "top": 311,
+                "file": "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
+                "page": 16,
+                "left": -175,
+                "top": 1,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
-              "title": "03 - Arquiteturas"
+              "title": "AULA 08 - PLANEJAMENTO"
+            }
+          },
+          {
+            "id": "89e12cc41d0e0459",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "es2/prova 2/textos/cap6.pdf",
+                "page": 6,
+                "left": -228,
+                "top": 469,
+                "zoom": 1.1
+              },
+              "icon": "lucide-file-text",
+              "title": "cap6"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,6 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "es2/prova 2/textos/cap6.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +123,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for cap6"
             }
           },
           {
@@ -176,7 +194,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 475.5,
+    "width": 481.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -194,20 +212,21 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "4726960b86950d5d",
+  "active": "89e12cc41d0e0459",
   "lastOpenFiles": [
-    "redes2/slides/04 - Camada de aplicação.pdf",
-    "cap6.md",
+    "es2/prova 2/slides/AULA 08 - PLANEJAMENTO.pdf",
+    "es2/prova 2/textos/cap6.pdf",
+    "es2/prova 2/anotacoes/Aula 8 - Planejamento.md",
+    "infosoc/seminário 1/textos/02 - (1623 a 1820).pdf",
     "distribuida/Unidade 1/01 - Introdução.pdf",
+    "cap6.md",
+    "redes2/slides/03 - Arquiteturas.pdf",
+    "redes2/slides/04 - Camada de aplicação.pdf",
     "redes2/slides/02 - Topologias.pdf",
     "redes2/slides/01 - Introdução as Redes.pdf",
     "redes2/slides/05 - Camada de transporte.pdf",
     "redes2/slides/08 - Segurança.pdf",
     "redes2/slides/07 - Gerenciamento de Rede.pdf",
-    "redes2/slides/06 - Camada de Rede.pdf",
-    "redes2/slides/03 - Arquiteturas.pdf",
-    "redes2/anotacoes",
-    "es2/prova 2/anotacoes/Aula 8 - Planejamento.md",
     "es2/prova 1/anotacoes/Capítulo 2.md",
     "es2/prova 1/anotacoes/Capítulo 4.md",
     "Untitled.canvas",
