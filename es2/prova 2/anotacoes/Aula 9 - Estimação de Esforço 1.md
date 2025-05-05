@@ -1,4 +1,3 @@
-## Aula 9 - Estimação de Esforço I: APF e PH
 
 ---
 
