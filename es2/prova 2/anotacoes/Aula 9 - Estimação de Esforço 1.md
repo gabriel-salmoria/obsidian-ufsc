@@ -47,7 +47,7 @@ A complexidade de cada Função Transacional (EE, CE, SE) é determinada por doi
 ---
 
 ### Slide 7: Complexidade Funcional de Entradas Externas (EE) (APF)
-A complexidade (Baixa, Média, Alta) de uma Entrada Externa é determinada consultando uma tabela que cruza o número de Tipos de Dados Elementares (#TDE) com o número de Arquivos Lógicos (#AL) acessados. Por exemplo:
+A complexidade (Baixa, Média, Alta) de uma Entrada Externa é determinada consultando uma tabela que cruza o número de Tipos de Dados Elementares #TDE com o número de Arquivos Lógicos #AL acessados. Por exemplo:
 * Baixa Complexidade: Poucos TDEs e poucos ALs.
 * Alta Complexidade: Muitos TDEs ou muitos ALs (ou ambos).
 
