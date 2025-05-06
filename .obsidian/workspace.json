@@ -44,9 +44,9 @@
               "type": "pdf",
               "state": {
                 "file": "es2/prova 2/textos/cap7.pdf",
-                "page": 1,
-                "left": -228,
-                "top": 650,
+                "page": 2,
+                "left": -3,
+                "top": 515,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
@@ -204,12 +204,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 481.5,
-    "collapsed": true
+    "width": 481.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -226,7 +225,7 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "0694e5c580ea2745",
+  "active": "e2b3f38626ac7526",
   "lastOpenFiles": [
     "es2/prova 2/slides/AULA 09 - ESTIMAÇÃO DE ESFORÇO 1 - APF e PH.pdf",
     "es2/prova 2/anotacoes/Aula 9 - Estimação de Esforço 1.md",
