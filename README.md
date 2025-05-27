@@ -1,33 +1,44 @@
-# 🎓 UFSC Academic Notes — 4th Semester
+# 🎓 Notas Acadêmicas — 5º Semestre UFSC
 
-This repository is an [Obsidian.md](https://obsidian.md) vault containing personal academic notes, lecture slides, and PDF resources for all courses taken during the **4th semester at UFSC** (Federal University of Santa Catarina).
-
-It is managed entirely through Obsidian and acts as a centralized, searchable, and markdown-based knowledge base.
+Este repositório é um vault do [Obsidian.md](https://obsidian.md) contendo anotações pessoais, slides e materiais de apoio referentes às disciplinas cursadas no **5º semestre da UFSC** (Universidade Federal de Santa Catarina).
 
 ---
 
-## ✍️ Content
+## 🧠 Conteúdo
 
-The vault includes:
+- ✅ Anotações em Markdown
+- ✅ Slides e PDFs de aulas
+- ✅ Textos e materiais complementares
 
-- ✅ Annotated lecture notes  
-- ✅ Slides and lecture PDFs  
-- ✅ Curated study materials and references  
-
-All content is written, organized, and linked in markdown format for fast navigation and review.
+Todo o conteúdo está organizado e vinculado para facilitar a navegação e revisão.
 
 ---
 
-## ⚙️ Obsidian Integration
+## ⚙️ Integração com Obsidian
 
-This repository includes full integration with Obsidian:
+O repositório inclui:
 
-- `.obsidian/` folder with plugin configurations and workspace settings
-- Custom workspace layout and community plugins for better navigation and linking
-- Automatically kept up to date using Obsidian’s file system
+- Configurações e plugins no diretório `.obsidian/`
+- Layout personalizado e plugins da comunidade para melhor navegação
+- Atualizações automáticas via sistema de arquivos do Obsidian
 
-To use it:
+---
+## 🤖 Automação com Plugin Git
 
-1. Clone the repo:
+Este vault é sincronizado automaticamente com o GitHub usando o plugin **[Obsidian Git](https://github.com/denolehov/obsidian-git)**.
+### Configuração atual:
+
+- ⏲️ Push automático: habilitado  
+- 💾 Intervalo de commit: ajustável  
+- 🧩 Plugin instalado via `.obsidian/plugins/`
+
+Isso garante que todas as alterações feitas localmente no vault sejam automaticamente salvas e versionadas no GitHub, sem necessidade de interação manual.
+
+### Como usar:
+
+1. Clone o repositório:
    ```bash
-   git clone https://github.com/yourusername/obsidian-ufsc.git
+   git clone https://github.com/gabriel-salmoria/obsidian-ufsc.git
+	```
+
+2. Importe o diretório como uma vault no obsidian (você não precisa ter o plugin do git configurado, *este repositório é uma vault*).
