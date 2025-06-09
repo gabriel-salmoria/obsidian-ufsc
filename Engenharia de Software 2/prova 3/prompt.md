@@ -1,5 +1,5 @@
 
-faça um resumo em markdown (escreva um bloco de markdown aqui, para que eu possa copiar e modificar em outro espaço) do conteúdo do  Capítulo 4. o resumo deve ser no formato explicando cada slide usando o material do texto, a ideia é que cada tópico contenha o suficiente para uns 1-2 minutos falando sobre o conteúdo do slide. (o resumo deve contemplar todos os slides, obviamente, e não deve ter tags de [cite_start], end e etc.). aqui segue um trecho de exemplo de como montar cada parte:
+faça um resumo em markdown (escreva um bloco de markdown aqui, para que eu possa copiar e modificar em outro espaço) do conteúdo do  Capítulo 12, do começo até o 12.3 (o que condiz com o conteúdo dos slides) . o resumo deve ser no formato explicando cada slide usando o material do texto, a ideia é que cada tópico contenha o suficiente para uns 1-2 minutos falando sobre o conteúdo do slide. (o resumo deve contemplar todos os slides, obviamente, e não deve ter tags de [cite_start], end e etc.). aqui segue um trecho de exemplo de como montar cada parte:
 
 
 
