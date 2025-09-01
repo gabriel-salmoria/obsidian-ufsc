@@ -1,6 +1,6 @@
-# 🎓 Notas Acadêmicas — 5º Semestre UFSC
+# 🎓 Notas Acadêmicas —  UFSC
 
-Este repositório é um vault do [Obsidian.md](https://obsidian.md) contendo anotações pessoais, slides e materiais de apoio referentes às disciplinas cursadas no **5º semestre da UFSC** (Universidade Federal de Santa Catarina).
+Este repositório é um vault do [Obsidian.md](https://obsidian.md) contendo anotações pessoais, slides e materiais de apoio referentes às disciplinas cursadas  **UFSC** (Universidade Federal de Santa Catarina).
 
 ---
 
