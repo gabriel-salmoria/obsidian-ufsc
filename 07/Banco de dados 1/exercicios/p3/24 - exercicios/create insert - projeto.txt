@@ -1,0 +1,65 @@
+CREATE TABLE Departamento (
+    codDepto INT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Empregado (
+    codEmp INT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    endereco VARCHAR(200),
+    dataNasc CHAR(10),
+    salario DECIMAL(10, 2),
+    codDepto INT,
+    FOREIGN KEY (codDepto) REFERENCES Departamento(codDepto)
+);
+
+CREATE TABLE Projeto (
+    codProj INT PRIMARY KEY,
+    titulo VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Trabalhaem (
+    codEmp INT,
+    codProj INT,
+    horasTrab INT,
+    PRIMARY KEY (codEmp, codProj),
+    FOREIGN KEY (codEmp) REFERENCES Empregado(codEmp),
+    FOREIGN KEY (codProj) REFERENCES Projeto(codProj)
+);
+
+-- Inserindo Departamentos (Incluindo 'Pesquisa' e o departamento 4)
+INSERT INTO Departamento (codDepto, nome) VALUES 
+(1, 'Pesquisa'),
+(2, 'Tecnologia'),
+(4, 'Recursos Humanos');
+
+-- Inserindo Empregados
+-- Pensei em datas e salários específicos para cobrir as regras de negócio das consultas
+INSERT INTO Empregado (codEmp, nome, endereco, dataNasc, salario, codDepto) VALUES 
+(1, 'Alice Almeida', 'Rua das Flores, 123', '1960-05-15', 35000.00, 1),
+(2, 'Roberto Carlos', 'Av. Brasil, 456', '1985-10-20', 25000.00, 1),
+(3, 'João Silva', 'Rua do Sol, 789', '1990-03-10', 15000.00, 2),
+(4, 'Ana Beatriz', 'Praça Central, 12', '1965-10-05', 32000.00, 4),
+(5, 'Carlos Eduardo', 'Rua da Paz, 99', '1955-12-01', 40000.00, 4),
+(6, 'Zeca Pagodinho', 'Av. do Samba, 100', '1980-02-15', 20000.00, 4); 
+(7, 'Lindalva', 'Av. Copa, 100', '1979-02-25', 30000.00, NULL); 
+(8, 'Eliazer', 'Av. Marim, 100', '1980-01-04', 10000.00, NULL); 
+
+
+-- Inserindo Projetos (Incluindo o 'Transmogrifador' e o projeto de código 3)
+INSERT INTO Projeto (codProj, titulo) VALUES 
+(1, 'Transmogrifador'),
+(2, 'Sistema de Vendas'),
+(3, 'Migração para Nuvem'),
+(4, 'Auditoria Interna');
+
+-- Inserindo as alocações em projetos
+-- Nota: O empregado 6 (Zeca) ficará de fora propositalmente para testar a Questão 14.
+INSERT INTO Trabalhaem (codEmp, codProj, horasTrab) VALUES 
+(1, 1, 15),
+(2, 1, 8),
+(1, 3, 25),
+(4, 3, 30),
+(5, 3, 10),
+(3, 2, 12),
+(4, 4, 5);
