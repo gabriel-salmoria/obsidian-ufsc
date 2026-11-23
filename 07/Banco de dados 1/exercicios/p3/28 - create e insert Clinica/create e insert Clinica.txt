@@ -1,0 +1,73 @@
+CREATE TABLE Paciente (
+    CodPac INT PRIMARY KEY,
+    NomePac VARCHAR(100) NOT NULL,
+    DataNascPac DATE NOT NULL
+);
+
+CREATE TABLE Internacao (
+    CodPac INT,
+    NumeroIntern INT,
+    DataHoraBaixa TIMESTAMP NOT NULL,
+    DataHoraAlta TIMESTAMP,
+    PRIMARY KEY (CodPac, NumeroIntern),
+    FOREIGN KEY (CodPac) REFERENCES Paciente(CodPac)
+);
+
+CREATE TABLE Leito (
+    NoLeito INT PRIMARY KEY,
+    CodigoQuarto VARCHAR(20) NOT NULL,
+    TipoLeito VARCHAR(50) NOT NULL,
+    andare INT NOT NULL
+);
+
+CREATE TABLE OcupaLeito (
+    CodPac INT,
+    NumeroIntern INT,
+    NoLeito INT,
+    DataHoraInic TIMESTAMP NOT NULL,
+    DataHoraFim TIMESTAMP,
+    PRIMARY KEY (CodPac, NumeroIntern, NoLeito, DataHoraInic),
+    FOREIGN KEY (CodPac, NumeroIntern) REFERENCES Internacao(CodPac, NumeroIntern),
+    FOREIGN KEY (NoLeito) REFERENCES Leito(NoLeito)
+);
+
+CREATE TABLE Parto (
+    CodPacBebe INT,
+    NumeroInternBebe INT,
+    HoraNasc TIMESTAMP NOT NULL,
+    TipoParto VARCHAR(50) NOT NULL,
+    CodPacMae INT NOT NULL,
+    NumeroInternMae INT NOT NULL,
+    PRIMARY KEY (CodPacBebe, NumeroInternBebe),
+    FOREIGN KEY (CodPacBebe, NumeroInternBebe) REFERENCES Internacao(CodPac, NumeroIntern),
+    FOREIGN KEY (CodPacMae, NumeroInternMae) REFERENCES Internacao(CodPac, NumeroIntern)
+);
+
+
+INSERT INTO Paciente (CodPac, NomePac, DataNascPac) VALUES (1, 'Maria Silva', '1980-04-20');
+INSERT INTO Paciente (CodPac, NomePac, DataNascPac) VALUES (2, 'João Silva', '1999-05-12');
+INSERT INTO Paciente (CodPac, NomePac, DataNascPac) VALUES (3, 'Pedro Santos', '2005-08-15');
+INSERT INTO Paciente (CodPac, NomePac, DataNascPac) VALUES (4, 'Ana Souza', '1995-10-10');
+
+
+INSERT INTO Internacao (CodPac, NumeroIntern, DataHoraBaixa, DataHoraAlta) 
+VALUES (1, 1, '1999-05-11 10:00:00', '1999-05-15 12:00:00');
+INSERT INTO Internacao (CodPac, NumeroIntern, DataHoraBaixa, DataHoraAlta) 
+VALUES (2, 1, '1999-05-12 14:30:00', '1999-05-15 12:00:00');
+INSERT INTO Internacao (CodPac, NumeroIntern, DataHoraBaixa, DataHoraAlta) 
+VALUES (4, 1, '2005-06-10 08:00:00', '2005-06-20 12:00:00');
+
+INSERT INTO Leito (NoLeito, CodigoQuarto, TipoLeito, andare) VALUES (101, 'Q10', 'Maternidade', 1);
+INSERT INTO Leito (NoLeito, CodigoQuarto, TipoLeito, andare) VALUES (102, 'Q11', 'Berçário', 1);
+INSERT INTO Leito (NoLeito, CodigoQuarto, TipoLeito, andare) VALUES (201, 'Q20', 'UTI', 2);
+
+
+INSERT INTO OcupaLeito (CodPac, NumeroIntern, NoLeito, DataHoraInic, DataHoraFim) 
+VALUES (1, 1, 101, '1999-05-11 10:30:00', '1999-05-15 12:00:00');
+INSERT INTO OcupaLeito (CodPac, NumeroIntern, NoLeito, DataHoraInic, DataHoraFim) 
+VALUES (2, 1, 102, '1999-05-12 15:00:00', '1999-05-15 12:00:00');
+INSERT INTO OcupaLeito (CodPac, NumeroIntern, NoLeito, DataHoraInic, DataHoraFim) 
+VALUES (4, 1, 201, '2005-06-10 09:00:00', '2005-06-20 12:00:00');
+
+INSERT INTO Parto (CodPacBebe, NumeroInternBebe, HoraNasc, TipoParto, CodPacMae, NumeroInternMae) 
+VALUES (2, 1, '1999-05-12 14:30:00', 'Natural', 1, 1);
