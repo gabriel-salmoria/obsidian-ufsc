@@ -43,7 +43,9 @@ professor: Aldo von Wangenheim
 13. [[13 - Modelos Hierárquicos e Animação]]
 14. [[14 - Percepção de Cor]]
 
-**Consulta rápida**: [[Colinha v1]] (versão atual, com glossário e algoritmos; também em `provas/Colinha v1.html` e `.pdf`) · [[Colinha]] (v0, versão anterior, congelada) · [[Mapa do que cai]] (cada assunto que aparece nas questões → seção da Colinha) · processamento de imagens e a matemática de vetores estão na Colinha, seções [S18] e [S21] · [[Formulário]] · [[Banco de Questões]] · [[Quiz de treino - banco do professor]] (77 questões do quiz de 2021 com explicação; versão interativa em `provas/quiz-treino.html`) · [[POSCOMP - Computação Gráfica]] (105 questões do POSCOMP 2002–2026: CG, matemática usada em CG e processamento de imagens, gabarito oficial; interativa em `provas/poscomp-cg.html`)
+**Consulta rápida**: [[Colona v2]] (versão atual: todo o conteúdo em blocos com tag, contas em LaTeX e busca própria; abra `provas/Colona v2.html` ou o site) · [[Formulário]]
+
+Treino e versões antigas ficam em subpastas de `provas/`: `treino/` ([[Banco de Questões]], quiz interativo, POSCOMP) e `versões antigas/` ([[Colinha v1]], [[Colinha]], [[Mapa do que cai]]).
 
 ⭐ = tópico com videoaula interativa, cujas questões vêm do banco da prova.
 
