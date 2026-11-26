@@ -1,0 +1,2071 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa do que cai</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1c1c1e;--muted:#6b6b70;--line:#e2dfd8;--code:#f2efe8;--acc:#2f5fb3;--side:#f3f1ec;--mark:#fff1a8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151517;--fg:#e9e9ec;--muted:#9a9aa2;--line:#34343a;--code:#222226;--acc:#8fb2ff;--side:#1c1c1f;--mark:#5a4b00}}
+:root[data-theme="dark"]{--bg:#151517;--fg:#e9e9ec;--muted:#9a9aa2;--line:#34343a;--code:#222226;--acc:#8fb2ff;--side:#1c1c1f;--mark:#5a4b00}
+*{box-sizing:border-box}
+html{scroll-padding-top:12px}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+nav{position:fixed;top:0;left:0;bottom:0;width:270px;overflow-y:auto;background:var(--side);border-right:1px solid var(--line);padding:14px 10px;font-size:13px}
+nav .top{font-weight:700;font-size:14px;margin:0 0 4px 6px}
+nav .sub{color:var(--muted);margin:0 0 10px 6px;font-size:12px}
+nav .other{margin:0 0 10px 6px}
+nav a{display:block;color:var(--fg);text-decoration:none;padding:3px 6px;border-radius:5px}
+nav a:hover{background:var(--line)}
+nav a.l3{padding-left:18px;color:var(--muted)}
+main{margin-left:270px;padding:20px 28px 80px;max-width:1080px}
+h1{font-size:24px;margin:4px 0 10px}
+h2{font-size:19px;margin:34px 0 8px;padding-bottom:4px;border-bottom:2px solid var(--fg)}
+h3{font-size:16px;margin:22px 0 6px}
+p{margin:6px 0}
+ul,ol{margin:6px 0;padding-left:22px}
+li{margin:2px 0}
+code{background:var(--code);padding:1px 4px;border-radius:4px;font:13px ui-monospace,Menlo,Consolas,monospace}
+pre{background:var(--code);padding:10px 12px;border-radius:8px;overflow-x:auto}
+pre code{padding:0;background:none;font-size:13px;line-height:1.35}
+table{border-collapse:collapse;margin:8px 0;width:100%;font-size:14px}
+th,td{border:1px solid var(--line);padding:4px 8px;vertical-align:top;text-align:left}
+th{background:var(--code)}
+.busca{font-size:12px;color:var(--muted);background:var(--code);border-radius:6px;padding:4px 8px}
+.busca span{font-weight:700}
+a{color:var(--acc)} a.sec{text-decoration:none;font-weight:600}
+hr{border:0;border-top:1px solid var(--line);margin:24px 0}
+.hint{font-size:12px;color:var(--muted);margin:0 0 12px}
+@media (max-width:860px){nav{position:static;width:auto;border-right:0;border-bottom:1px solid var(--line);max-height:40vh}main{margin-left:0;padding:16px}}
+@media print{nav{display:none}main{margin:0;max-width:none;padding:0}body{font-size:11px;background:#fff;color:#000}h2{break-after:avoid}pre,table{break-inside:avoid}}
+</style></head><body>
+<nav><div class="top">Mapa do que cai</div><div class="sub">assunto → seção da Colinha → questões</div><div class="other"><a href="Colinha v1.html">Colinha v1</a></div><a class="l2" href="#computacao-grafica-2d">Computação gráfica 2D</a><a class="l3" href="#s02">[S02] Conceitos básicos</a><a class="l3" href="#s03">[S03] Transformações 2D e coordenadas homogêneas</a><a class="l3" href="#s04">[S04] Window, viewport e SCN</a><a class="l3" href="#s05">[S05] Clipping (recorte)</a><a class="l2" href="#curvas-e-superficies">Curvas e superfícies</a><a class="l3" href="#s06">[S06] Curvas: Hermite, Bézier, de Casteljau, continuidade</a><a class="l3" href="#s07">[S07] B-splines e forward differences</a><a class="l3" href="#s08">[S08] Superfícies bicúbicas</a><a class="l2" href="#3d-projecoes-e-pipeline">3D, projeções e pipeline</a><a class="l3" href="#s09">[S09] 3D: matrizes, eixo arbitrário, normal, plano, OBJ</a><a class="l3" href="#s10">[S10] Projeções e pipeline 3D</a><a class="l3" href="#s15">[S15] GPU, shaders e pipeline do OpenGL</a><a class="l2" href="#rasterizacao-e-visibilidade">Rasterização e visibilidade</a><a class="l3" href="#s11">[S11] Rasterização: retas, círculos, preenchimento, aliasing, texturas</a><a class="l3" href="#s12">[S12] Superfície oculta: z-buffer, pintor, backface, BSP</a><a class="l2" href="#iluminacao-e-visualizacao-realista">Iluminação e visualização realista</a><a class="l3" href="#s13">[S13] Iluminação: Phong, Lambert, fontes de luz, shading</a><a class="l3" href="#s14">[S14] Raytracing, raycasting e radiosidade</a><a class="l3" href="#s17">[S17] Cor</a><a class="l2" href="#processamento-de-imagens">Processamento de imagens</a><a class="l3" href="#s18">[S18] Processamento de imagens</a><a class="l2" href="#matematica-vetores-e-transformacoes-lineares">Matemática (vetores e transformações lineares)</a><a class="l3" href="#s21">[S21] Matemática que cai junto: vetores e transformações lineares</a><a class="l2" href="#resumos-transversais">Resumos transversais</a><a class="l3" href="#s00">[S00] Definições rápidas (descrição → nome)</a><a class="l3" href="#s01">[S01] Confusões clássicas (o certo e com o que costuma ser confundido)</a><a class="l2" href="#indice-por-questao">Índice por questão</a></nav>
+<main><p class="hint">Ctrl+F busca na página inteira. Dica: busque a raiz da palavra (ex.: "proje", "ilumina") ou o código da seção (ex.: "[S12]").</p>
+<h1 id="mapa-do-que-cai-e-onde-esta-explicado">Mapa do que cai (e onde está explicado)</h1>
+<p>Voltar: Computação Gráfica · <a href="Colinha%20v1.html">Colinha v1</a> · Quiz de treino - banco do professor · POSCOMP - Computação Gráfica</p>
+<p>Este mapa junta tudo o que aparece nas questões de treino (quiz do professor de 2021 = <strong>Q01–Q77</strong>; POSCOMP 2002–2026 = <strong>P01–P105</strong>) e diz onde estudar cada coisa na <a href="Colinha%20v1.html">Colinha v1</a>. Os códigos <code>[S..]</code> são as seções da Colinha: busque o código com Ctrl+F para ir direto. Na coluna &quot;buscar&quot; está a palavra que eu usaria no Ctrl+F para cair no lugar certo.</p>
+<p>Como usar na prova: lê a questão, identifica o assunto aqui (ou direto na tabela <a class="sec" href="Colinha v1.html#s00">[S00]</a> da Colinha), busca a palavra e lê o parágrafo. As contas têm receita e exemplo com outros números.</p>
+<h2 id="computacao-grafica-2d">Computação gráfica 2D</h2>
+<h3 id="s02"><code>[S02]</code> Conceitos básicos</h3>
+<p>O que precisa saber: diferença entre API gráfica, DirectX, game engine e modelador; ECS (composição × herança); display vetorial × raster; termos de modelagem (modificador, textura, método de renderização); distância euclidiana para picking.</p>
+<table>
+<thead>
+<tr>
+<th>assunto da questão</th>
+<th>buscar</th>
+<th>questões</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MeshSmooth, bump map, flat shading</td>
+<td><code>meshsmooth</code></td>
+<td>Q65, P33</td>
+</tr>
+<tr>
+<td>ECS</td>
+<td><code>ecs</code></td>
+<td>Q69</td>
+</tr>
+<tr>
+<td>Pacote com motor gráfico, física, som...</td>
+<td><code>engine</code></td>
+<td>Q70</td>
+</tr>
+<tr>
+<td>Exemplos de API gráfica</td>
+<td><code>api</code></td>
+<td>Q71</td>
+</tr>
+<tr>
+<td>Distância do mouse ao centro</td>
+<td><code>envelope</code></td>
+<td>Q72, P14</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s03"><code>[S03]</code> Transformações 2D e coordenadas homogêneas</h3>
+<p>O que precisa saber: homogêneas (W, 3×3 e 4×4, por que existem); reconhecer translação, escala e rotação pela forma da matriz; vetor-linha × vetor-coluna; composição e ordem (quem comuta); girar/escalar em torno de um ponto; ler uma matriz composta (escala antes ou depois da translação); mudança de base.</p>
+<table>
+<thead>
+<tr>
+<th>assunto da questão</th>
+<th>buscar</th>
+<th>questões</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reconhecer matriz de translação 2D</td>
+<td><code>translação</code></td>
+<td>Q17</td>
+</tr>
+<tr>
+<td>Sx e Sy: escala 2D</td>
+<td><code>diagonal</code></td>
+<td>Q18</td>
+</tr>
+<tr>
+<td>Expressão [x y 1]·M: homogêneas e W</td>
+<td><code>homogêneas</code></td>
+<td>Q20</td>
+</tr>
+<tr>
+<td>Reconhecer matriz de rotação 2D</td>
+<td><code>rotação</code></td>
+<td>Q22</td>
+</tr>
+<tr>
+<td>Homogêneas 3D: pontos 4D e W</td>
+<td><code>homogêneas</code></td>
+<td>Q24</td>
+</tr>
+<tr>
+<td>Reconhecer matriz de escala 2D</td>
+<td><code>diagonal</code></td>
+<td>Q25</td>
+</tr>
+<tr>
+<td>Homogêneas e comutatividade</td>
+<td><code>comutam</code></td>
+<td>Q29, P34</td>
+</tr>
+<tr>
+<td>Girar em torno do centro de massa</td>
+<td><code>em torno</code></td>
+<td>Q30, P20</td>
+</tr>
+<tr>
+<td>Ler matrizes A e B (ordem, centro, mudança de base)</td>
+<td><code>primeiro escala / mudança de base</code></td>
+<td>Q31</td>
+</tr>
+<tr>
+<td>Identificar a matriz de uma rotação + translação</td>
+<td><code>vetor-coluna</code></td>
+<td>Q32, P17</td>
+</tr>
+<tr>
+<td>Ler matrizes A e B</td>
+<td><code>primeiro escala / mudança de base</code></td>
+<td>P30</td>
+</tr>
+<tr>
+<td>Matrizes A e B: centro, ordem, homogêneas</td>
+<td><code>só a translação / primeiro escala</code></td>
+<td>P46</td>
+</tr>
+<tr>
+<td>Matriz de rotação em torno de um ponto (números)</td>
+<td><code>em torno</code></td>
+<td>P50</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s04"><code>[S04]</code> Window, viewport e SCN</h3>
+<p>O que precisa saber: window (mundo) × viewport (dispositivo); fórmula da transformada de viewport com y invertido e origem deslocada; SCN com origem no centro e domínio [−1,1]; zoom in/out; relação de aspecto; instanciamento (aplicar transformações e ver a posição relativa).</p>
+<table>
+<thead>
+<tr>
+<th>assunto da questão</th>
+<th>buscar</th>
+<th>questões</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ponto na viewport (coordenada y, y invertido)</td>
+<td><code>viewport</code></td>
+<td>Q02</td>
+</tr>
+<tr>
+<td>Ponto recortado em SCN (coordenada y)</td>
+<td><code>scn</code></td>
+<td>Q03</td>
+</tr>
+<tr>
+<td>Ponto em SCN (coordenada y)</td>
+<td><code>scn</code></td>
+<td>Q05</td>
+</tr>
+<tr>
+<td>Ponto recortado na viewport (coordenada y)</td>
+<td><code>viewport / recorta</code></td>
+<td>Q06</td>
+</tr>
+<tr>
+<td>Ponto recortado em SCN (coordenada x)</td>
+<td><code>scn</code></td>
+<td>Q07</td>
+</tr>
+<tr>
+<td>Ponto em SCN (coordenada x)</td>
+<td><code>scn</code></td>
+<td>Q09</td>
+</tr>
+<tr>
+<td>Ponto na viewport (coordenada x)</td>
+<td><code>viewport</code></td>
+<td>Q11</td>
+</tr>
+<tr>
+<td>Window × viewport: sistema, aspecto, zoom</td>
+<td><code>zoom</code></td>
+<td>Q14, P01</td>
+</tr>
+<tr>
+<td>Window, viewport, aspecto, onde recortar</td>
+<td><code>viewport</code></td>
+<td>Q15, P36</td>
+</tr>
+<tr>
+<td>Instanciamento e posição na window</td>
+<td><code>instanciamento</code></td>
+<td>Q16, P05</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s05"><code>[S05]</code> Clipping (recorte)</h3>
+<p>O que precisa saber: nomes dos algoritmos (Cohen-Sutherland, Liang-Barsky, Nicholl-Lee-Nicholl, Sutherland-Hodgeman, Weiler-Atherton) e os distratores; montar region codes; achar o ponto recortado.</p>
+<table>
+<thead>
+<tr>
+<th>assunto da questão</th>
+<th>buscar</th>
+<th>questões</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Algoritmos de recorte de polígonos</td>
+<td><code>polígonos / Gauss</code></td>
+<td>Q01</td>
+</tr>
+<tr>
+<td>Nome do algoritmo por códigos de região</td>
+<td><code>region code</code></td>
+<td>Q04</td>
+</tr>
+<tr>
+<td>Region codes de dois pontos</td>
+<td><code>region code</code></td>
+<td>Q08, Q12</td>
+</tr>
+<tr>
+<td>Nome do algoritmo com pk e qk</td>
+<td><code>pk</code></td>
+<td>Q10</td>
+</tr>
+<tr>
+<td>Nome do algoritmo por coeficientes angulares</td>
+<td><code>coeficiente angular</code></td>
+<td>Q13</td>
+</tr>
+</tbody>
+</table>
+<h2 id="curvas-e-superficies">Curvas e superfícies</h2>
+<h3 id="s06"><code>[S06]</code> Curvas: Hermite, Bézier, de Casteljau, continuidade</h3>
+<p>O que precisa saber: Hermite, Bézier (Bernstein, fecho convexo, tangentes), de Casteljau, continuidade.</p>
+<p>(nenhuma questão de treino caiu direto aqui, mas o assunto está no programa)</p>
+<h3 id="s07"><code>[S07]</code> B-splines e forward differences</h3>
+<p>O que precisa saber: B-spline (controle local, C2), forward differences.</p>
+<p>(nenhuma questão de treino caiu direto aqui, mas o assunto está no programa)</p>
+<h3 id="s08"><code>[S08]</code> Superfícies bicúbicas</h3>
+<p>O que precisa saber: superfície bicúbica; soma dupla com Bernstein = superfície de Bézier.</p>
+<table>
+<thead>
+<tr>
+<th>assunto da questão</th>
+<th>buscar</th>
+<th>questões</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Superfície pela soma com Bernstein</td>
+<td><code>bernstein</code></td>
+<td>Q46, P32</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3d-projecoes-e-pipeline">3D, projeções e pipeline</h2>
+<h3 id="s09"><code>[S09]</code> 3D: matrizes, eixo arbitrário, normal, plano, OBJ</h3>
+<p>O que precisa saber: matrizes 3D (translação, escala, Rx/Ry/Rz de 90°); matriz aplicada a vetor (colunas); normal por produto vetorial e estrutura de arame; projeção de ponto num plano numa direção.</p>
+<table>
+<thead>
+<tr>
+<th>assunto da questão</th>
+<th>buscar</th>
+<th>questões</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Matriz de translação 3D</td>
+<td><code>translação 3d</code></td>
+<td>Q19</td>
+</tr>
+<tr>
+<td>Matriz de escala 3D</td>
+<td><code>escala 3d</code></td>
+<td>Q21</td>
+</tr>
+<tr>
+<td>Rotação 3D de 90° em Z</td>
+<td><code>rz</code></td>
+<td>Q23</td>
+</tr>
+<tr>
+<td>Rotação 3D de 90° em X</td>
+<td><code>rx</code></td>
+<td>Q26</td>
+</tr>
+<tr>
+<td>Escolher a matriz de translação 3D</td>
+<td><code>translação 3d</code></td>
+<td>Q27</td>
+</tr>
+<tr>
+<td>Rotação 3D de 90° em Y</td>
+<td><code>ry</code></td>
+<td>Q28</td>
+</tr>
+<tr>
+<td>Matriz aplicada a um vetor</td>
+<td><code>coluna</code></td>
+<td>Q33, P53</td>
+</tr>
+<tr>
+<td>Estrutura de arame e normal</td>
+<td><code>arame</code></td>
+<td>Q34, P29</td>
+</tr>
+<tr>
+<td>Vetor perpendicular a dois</td>
+<td><code>perpendicular</code></td>
+<td>Q35, P40</td>
+</tr>
+<tr>
+<td>Projeção de ponto num plano por direção</td>
+<td><code>plano</code></td>
+<td>Q38, P11, P13</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s10"><code>[S10]</code> Projeções e pipeline 3D</h3>
+<p>O que precisa saber: classificação das projeções (do professor); paralela × perspectiva (tamanho, volume de visão, matriz 4×4); as ordens do pipeline 3D; transformação de câmera; volume de visão; pistas de profundidade.</p>
+<table>
+<thead>
+<tr>
+<th>assunto da questão</th>
+<th>buscar</th>
+<th>questões</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Projeção paralela (marque as verdadeiras)</td>
+<td><code>oblíqua / ignora Z</code></td>
+<td>Q36</td>
+</tr>
+<tr>
+<td>Características das projeções</td>
+<td><code>perspectiva</code></td>
+<td>Q37, P35</td>
+</tr>
+<tr>
+<td>Associar etapas da síntese de imagens</td>
+<td><code>volume de visão / Gouraud</code></td>
+<td>Q39, P22</td>
+</tr>
+<tr>
+<td>Afirmações sobre o pipeline 3D</td>
+<td><code>pipeline</code></td>
+<td>Q40, P03</td>
+</tr>
+<tr>
+<td>Ordem: recorte, projeção, rasterização, visibilidade</td>
+<td><code>pipeline</code></td>
+<td>Q41, P18</td>
+</tr>
+<tr>
+<td>Ordem: câmera, recorte 3D, projeção, tela, rasterização</td>
+<td><code>pipeline</code></td>
+<td>Q42, P04</td>
+</tr>
+<tr>
+<td>Nome da região recortada e projetada</td>
+<td><code>volume de visão</code></td>
+<td>Q43, P37</td>
+</tr>
+<tr>
+<td>Ordem das 5 transformações do pipeline</td>
+<td><code>pipeline</code></td>
+<td>Q44, P38</td>
+</tr>
+<tr>
+<td>Transformação de câmera</td>
+<td><code>câmera</code></td>
+<td>Q45, P06</td>
+</tr>
+<tr>
+<td>Pistas de profundidade</td>
+<td><code>profundidade</code></td>
+<td>P09</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s15"><code>[S15]</code> GPU, shaders e pipeline do OpenGL</h3>
+<p>O que precisa saber: pixel shader; pipeline do OpenGL; o que pertence à etapa de rendering.</p>
+<table>
+<thead>
+<tr>
+<th>assunto da questão</th>
+<th>buscar</th>
+<th>questões</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nome: cor e iluminação por pixel na GPU</td>
+<td><code>pixel shader</code></td>
+<td>Q51</td>
+</tr>
+<tr>
+<td>Tarefas da etapa de rendering</td>
+<td><code>rendering</code></td>
+<td>P48</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rasterizacao-e-visibilidade">Rasterização e visibilidade</h2>
+<h3 id="s11"><code>[S11]</code> Rasterização: retas, círculos, preenchimento, aliasing, texturas</h3>
+<p>O que precisa saber: reta ingênua/DDA/Bresenham; ponto médio do círculo; preenchimento (vizinhança 4/8); aliasing e MSAA; texturas (2D, procedural, bump, mipmap).</p>
+<table>
+<thead>
+<tr>
+<th>assunto da questão</th>
+<th>buscar</th>
+<th>questões</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MSAA</td>
+<td><code>msaa</code></td>
+<td>Q60, P25</td>
+</tr>
+<tr>
+<td>Textura que perturba a normal</td>
+<td><code>bump</code></td>
+<td>Q63, P39</td>
+</tr>
+<tr>
+<td>Função em C que desenha</td>
+<td><code>putpixel</code></td>
+<td>Q66, P15</td>
+</tr>
+<tr>
+<td>Memória extra do mipmap</td>
+<td><code>mipmap</code></td>
+<td>Q67, P28</td>
+</tr>
+<tr>
+<td>Texturas: 2D, procedural, bump</td>
+<td><code>textura</code></td>
+<td>P42</td>
+</tr>
+<tr>
+<td>O que é mipmapping</td>
+<td><code>mipmap</code></td>
+<td>P49</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s12"><code>[S12]</code> Superfície oculta: z-buffer, pintor, backface, BSP</h3>
+<p>O que precisa saber: z-buffer (incremental, um valor por pixel, guarda o mais próximo, ordem não importa); pintor; backface (só 1 convexo); BSP; o que é e o que não é técnica de superfície oculta.</p>
+<table>
+<thead>
+<tr>
+<th>assunto da questão</th>
+<th>buscar</th>
+<th>questões</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Propriedades do z-buffer</td>
+<td><code>z-buffer</code></td>
+<td>Q61, P02</td>
+</tr>
+<tr>
+<td>Duas esferas, uma escondendo a outra</td>
+<td><code>z-buffer</code></td>
+<td>Q64, P24</td>
+</tr>
+<tr>
+<td>O que não é técnica de superfície oculta</td>
+<td><code>ocultas</code></td>
+<td>P45</td>
+</tr>
+</tbody>
+</table>
+<h2 id="iluminacao-e-visualizacao-realista">Iluminação e visualização realista</h2>
+<h3 id="s13"><code>[S13]</code> Iluminação: Phong, Lambert, fontes de luz, shading</h3>
+<p>O que precisa saber: modelo de Phong (3 componentes aditivas), Lambert, especular, ambiente; por que calcular normais; fontes de luz; flat × Gouraud × Phong shading; normal de superfície paramétrica.</p>
+<table>
+<thead>
+<tr>
+<th>assunto da questão</th>
+<th>buscar</th>
+<th>questões</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Componentes do modelo de Phong</td>
+<td><code>phong</code></td>
+<td>Q47</td>
+</tr>
+<tr>
+<td>Para que servem as normais</td>
+<td><code>normais</code></td>
+<td>Q48</td>
+</tr>
+<tr>
+<td>Normal de superfície paramétrica</td>
+<td><code>paramétrica</code></td>
+<td>Q55, P21</td>
+</tr>
+<tr>
+<td>Modelos de iluminação locais</td>
+<td><code>lambert</code></td>
+<td>Q56, P23</td>
+</tr>
+<tr>
+<td>Fonte de luz no infinito</td>
+<td><code>direcional</code></td>
+<td>Q57, P41</td>
+</tr>
+<tr>
+<td>Gouraud, volume paralelo, Bresenham, aliasing</td>
+<td><code>gouraud</code></td>
+<td>Q62, P26</td>
+</tr>
+<tr>
+<td>Tonalização que interpola normais</td>
+<td><code>phong shading</code></td>
+<td>P43</td>
+</tr>
+<tr>
+<td>Flat, Gouraud e Phong (afirmações)</td>
+<td><code>flat</code></td>
+<td>P51</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s14"><code>[S14]</code> Raytracing, raycasting e radiosidade</h3>
+<p>O que precisa saber: ray tracer × ray caster × ray caster volumétrico; o que o ray tracing faz e não faz (z-buffer, difuso, número de raios, modelo local); radiosidade.</p>
+<table>
+<thead>
+<tr>
+<th>assunto da questão</th>
+<th>buscar</th>
+<th>questões</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Radiância e radiosidade</td>
+<td><code>radiosidade</code></td>
+<td>Q49</td>
+</tr>
+<tr>
+<td>Nome: raios num volume de voxels</td>
+<td><code>voxel</code></td>
+<td>Q50</td>
+</tr>
+<tr>
+<td>Nome: raios de trás para frente</td>
+<td><code>trás para frente</code></td>
+<td>Q52</td>
+</tr>
+<tr>
+<td>O que o ray tracing faz</td>
+<td><code>ray tracing</code></td>
+<td>Q53, P07</td>
+</tr>
+<tr>
+<td>Afirmações sobre ray tracing</td>
+<td><code>ray tracing</code></td>
+<td>Q58, P08</td>
+</tr>
+<tr>
+<td>Simular a propagação da luz</td>
+<td><code>propagação</code></td>
+<td>Q59, P31</td>
+</tr>
+<tr>
+<td>Afirmações sobre ray tracing (z-buffer, difuso, secundários)</td>
+<td><code>ray tracing</code></td>
+<td>P44</td>
+</tr>
+<tr>
+<td>Ray tracing, z-buffer e Phong (afirmações)</td>
+<td><code>ray tracing</code></td>
+<td>P47</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s17"><code>[S17]</code> Cor</h3>
+<p>O que precisa saber: modelos de cor, luminância, saturação × luminosidade, IHS.</p>
+<p>(nenhuma questão de treino caiu direto aqui, mas o assunto está no programa)</p>
+<h2 id="processamento-de-imagens">Processamento de imagens</h2>
+<h3 id="s18"><code>[S18]</code> Processamento de imagens</h3>
+<p>O que precisa saber: digitalização (amostragem × quantização); etapas da análise de imagens; histograma e equalização; negativo e transformações de intensidade; filtros espaciais (média, mediana, passa-baixas/altas, máscaras); Fourier, DCT, wavelet, outras transformadas; interpolação; realce × restauração; segmentação; textura; reconhecimento (distância mínima, perceptron, estéreo); compressão (Huffman, RLE, JPEG, BMP, planos de bits).</p>
+<table>
+<thead>
+<tr>
+<th>assunto da questão</th>
+<th>buscar</th>
+<th>questões</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Filtros: qual afirmação é incorreta</td>
+<td><code>laplaciano</code></td>
+<td>Q74, P63</td>
+</tr>
+<tr>
+<td>Histograma, brilho/contraste, negativo</td>
+<td><code>equalização</code></td>
+<td>Q75, P64</td>
+</tr>
+<tr>
+<td>Definição de segmentação</td>
+<td><code>segmentação</code></td>
+<td>Q76, P75</td>
+</tr>
+<tr>
+<td>Passa-baixas numa imagem toda preta</td>
+<td><code>passa-baixa</code></td>
+<td>Q77, P69</td>
+</tr>
+<tr>
+<td>Definição de histograma</td>
+<td><code>histograma</code></td>
+<td>P60</td>
+</tr>
+<tr>
+<td>Para que serve a mediana</td>
+<td><code>mediana</code></td>
+<td>P61</td>
+</tr>
+<tr>
+<td>Descritores de textura</td>
+<td><code>co-ocorrência</code></td>
+<td>P62</td>
+</tr>
+<tr>
+<td>Ordem das etapas da análise de imagens</td>
+<td><code>análise de imagens</code></td>
+<td>P65</td>
+</tr>
+<tr>
+<td>Discretizar espaço e amplitude</td>
+<td><code>amostragem</code></td>
+<td>P66</td>
+</tr>
+<tr>
+<td>Média × mediana (características)</td>
+<td><code>mediana</code></td>
+<td>P67</td>
+</tr>
+<tr>
+<td>Convolução de [−1 2 −1] numa rampa</td>
+<td><code>[−1 2 −1]</code></td>
+<td>P68</td>
+</tr>
+<tr>
+<td>Técnicas de realce</td>
+<td><code>realce</code></td>
+<td>P70</td>
+</tr>
+<tr>
+<td>Comprimento médio de código Huffman</td>
+<td><code>huffman</code></td>
+<td>P71</td>
+</tr>
+<tr>
+<td>Contraste em cor sem mudar o tom</td>
+<td><code>ihs</code></td>
+<td>P72</td>
+</tr>
+<tr>
+<td>Média e mediana 3×3 em padrões</td>
+<td><code>mediana</code></td>
+<td>P73</td>
+</tr>
+<tr>
+<td>Filtro de diferença e orientação das bordas</td>
+<td><code>direcional</code></td>
+<td>P74</td>
+</tr>
+<tr>
+<td>Transformação do negativo</td>
+<td><code>negativo</code></td>
+<td>P76</td>
+</tr>
+<tr>
+<td>O que é e o que não é segmentação</td>
+<td><code>segmentação</code></td>
+<td>P77</td>
+</tr>
+<tr>
+<td>Luminância a partir de RGB</td>
+<td><code>luminância</code></td>
+<td>P78</td>
+</tr>
+<tr>
+<td>Classificador de distância mínima</td>
+<td><code>distância mínima</code></td>
+<td>P79</td>
+</tr>
+<tr>
+<td>Transformadas: núcleo separável e simétrico</td>
+<td><code>separável</code></td>
+<td>P80</td>
+</tr>
+<tr>
+<td>Filtro para tirar pontos preservando forma</td>
+<td><code>mediana</code></td>
+<td>P81</td>
+</tr>
+<tr>
+<td>Histograma e equalização (afirmações)</td>
+<td><code>histograma</code></td>
+<td>P82</td>
+</tr>
+<tr>
+<td>Associar máscaras às matrizes</td>
+<td><code>sobel</code></td>
+<td>P83</td>
+</tr>
+<tr>
+<td>Fourier: espectro, fase, separabilidade</td>
+<td><code>fourier</code></td>
+<td>P84</td>
+</tr>
+<tr>
+<td>Objetivo de um filtro digital</td>
+<td><code>filtro</code></td>
+<td>P85</td>
+</tr>
+<tr>
+<td>O que não é modelo de imagem</td>
+<td><code>doi</code></td>
+<td>P86</td>
+</tr>
+<tr>
+<td>Objetivo da equalização</td>
+<td><code>equalização</code></td>
+<td>P87</td>
+</tr>
+<tr>
+<td>Resultado do passa-baixa</td>
+<td><code>passa-baixa</code></td>
+<td>P88</td>
+</tr>
+<tr>
+<td>O que não é técnica de PDI</td>
+<td><code>têmpera</code></td>
+<td>P89</td>
+</tr>
+<tr>
+<td>Wavelet</td>
+<td><code>wavelet</code></td>
+<td>P90</td>
+</tr>
+<tr>
+<td>Equalização de cores</td>
+<td><code>equalização</code></td>
+<td>P91</td>
+</tr>
+<tr>
+<td>Definição de quantização</td>
+<td><code>quantização</code></td>
+<td>P92</td>
+</tr>
+<tr>
+<td>Resultado da equalização</td>
+<td><code>equalização</code></td>
+<td>P93</td>
+</tr>
+<tr>
+<td>Visão estéreo</td>
+<td><code>estéreo</code></td>
+<td>P94</td>
+</tr>
+<tr>
+<td>Restauração de imagens (afirmações)</td>
+<td><code>restauração</code></td>
+<td>P95</td>
+</tr>
+<tr>
+<td>Codificação por planos de bits</td>
+<td><code>planos de bits</code></td>
+<td>P96</td>
+</tr>
+<tr>
+<td>Interpolação: vizinho, bilinear, bicúbica</td>
+<td><code>interpolação</code></td>
+<td>P97</td>
+</tr>
+<tr>
+<td>Rede neural de uma unidade</td>
+<td><code>perceptron</code></td>
+<td>P98</td>
+</tr>
+<tr>
+<td>Amostragem e quantização (lacunas)</td>
+<td><code>amostragem</code></td>
+<td>P99</td>
+</tr>
+<tr>
+<td>Filtragem: média, passa-baixa, laplaciano, domínios</td>
+<td><code>laplaciano</code></td>
+<td>P100</td>
+</tr>
+<tr>
+<td>Compressão: RLE, lossy, BMP</td>
+<td><code>rle</code></td>
+<td>P101</td>
+</tr>
+<tr>
+<td>Tamanho da máscara da média</td>
+<td><code>M×M</code></td>
+<td>P102</td>
+</tr>
+<tr>
+<td>JPEG</td>
+<td><code>jpeg</code></td>
+<td>P103</td>
+</tr>
+<tr>
+<td>Amostragem × quantização</td>
+<td><code>amostragem</code></td>
+<td>P104</td>
+</tr>
+<tr>
+<td>Filtros na frequência</td>
+<td><code>passa-alta</code></td>
+<td>P105</td>
+</tr>
+</tbody>
+</table>
+<h2 id="matematica-vetores-e-transformacoes-lineares">Matemática (vetores e transformações lineares)</h2>
+<h3 id="s21"><code>[S21]</code> Matemática que cai junto: vetores e transformações lineares</h3>
+<p>O que precisa saber: produto escalar e ângulo; produto vetorial e propriedades; normal de triângulo; equações do plano; reconhecer reflexão/rotação pela matriz; transformar normais; o que a afim preserva.</p>
+<table>
+<thead>
+<tr>
+<th>assunto da questão</th>
+<th>buscar</th>
+<th>questões</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Normais, compressão, iluminação local, cor, afim</td>
+<td><code>inversa transposta / saturação / mesma cor / sombra</code></td>
+<td>P16</td>
+</tr>
+<tr>
+<td>Reconhecer reflexão pela matriz</td>
+<td><code>reflexão através</code></td>
+<td>P52</td>
+</tr>
+<tr>
+<td>Normal de um triângulo por 3 pontos</td>
+<td><code>normal de um triângulo</code></td>
+<td>P54</td>
+</tr>
+<tr>
+<td>Ângulo de uma rotação dada por um par</td>
+<td><code>rotação dada por um par</code></td>
+<td>P55</td>
+</tr>
+<tr>
+<td>Propriedades do produto vetorial</td>
+<td><code>produto vetorial</code></td>
+<td>P56</td>
+</tr>
+<tr>
+<td>Plano por 3 pontos: equações, LI, normal</td>
+<td><code>equação geral</code></td>
+<td>P57</td>
+</tr>
+<tr>
+<td>Produto escalar e ângulo</td>
+<td><code>produto escalar</code></td>
+<td>P58</td>
+</tr>
+<tr>
+<td>Produto escalar e vetorial numéricos</td>
+<td><code>produto vetorial</code></td>
+<td>P59</td>
+</tr>
+</tbody>
+</table>
+<h2 id="resumos-transversais">Resumos transversais</h2>
+<h3 id="s00"><code>[S00]</code> Definições rápidas (descrição → nome)</h3>
+<p>O que precisa saber: tabela &quot;descrição → nome&quot; para as questões do tipo &quot;estamos falando de um...&quot;.</p>
+<table>
+<thead>
+<tr>
+<th>assunto da questão</th>
+<th>buscar</th>
+<th>questões</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Associar técnicas às funções</td>
+<td><code>BSP / Cohen-Sutherland</code></td>
+<td>Q73, P27</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s01"><code>[S01]</code> Confusões clássicas (o certo e com o que costuma ser confundido)</h3>
+<p>O que precisa saber: lista das confusões mais comuns, separadas por tema.</p>
+<table>
+<thead>
+<tr>
+<th>assunto da questão</th>
+<th>buscar</th>
+<th>questões</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phong × Gouraud, z-buffer, homogêneo, malha triangular</td>
+<td><code>Gouraud / divide tudo por W / planar</code></td>
+<td>Q54, P19</td>
+</tr>
+<tr>
+<td>Raster, preenchimento, círculo, backface, zoom</td>
+<td><code>pisca</code></td>
+<td>Q68, P10</td>
+</tr>
+<tr>
+<td>Raster, backface, ponto médio do círculo</td>
+<td><code>pisca</code></td>
+<td>P12</td>
+</tr>
+</tbody>
+</table>
+<h2 id="indice-por-questao">Índice por questão</h2>
+<p>Para treinar um assunto, abra a questão no Quiz de treino - banco do professor (Q..) ou no POSCOMP - Computação Gráfica (P..).</p>
+<table>
+<thead>
+<tr>
+<th>questão</th>
+<th>assunto</th>
+<th>seção</th>
+<th>buscar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q01</td>
+<td>Algoritmos de recorte de polígonos</td>
+<td><a class="sec" href="Colinha v1.html#s05"><a class="sec" href="Colinha v1.html#s05">[S05]</a></a></td>
+<td><code>polígonos / Gauss</code></td>
+</tr>
+<tr>
+<td>Q02</td>
+<td>Ponto na viewport (coordenada y, y invertido)</td>
+<td><a class="sec" href="Colinha v1.html#s04"><a class="sec" href="Colinha v1.html#s04">[S04]</a></a></td>
+<td><code>viewport</code></td>
+</tr>
+<tr>
+<td>Q03</td>
+<td>Ponto recortado em SCN (coordenada y)</td>
+<td><a class="sec" href="Colinha v1.html#s04"><a class="sec" href="Colinha v1.html#s04">[S04]</a></a></td>
+<td><code>scn</code></td>
+</tr>
+<tr>
+<td>Q04</td>
+<td>Nome do algoritmo por códigos de região</td>
+<td><a class="sec" href="Colinha v1.html#s05"><a class="sec" href="Colinha v1.html#s05">[S05]</a></a></td>
+<td><code>region code</code></td>
+</tr>
+<tr>
+<td>Q05</td>
+<td>Ponto em SCN (coordenada y)</td>
+<td><a class="sec" href="Colinha v1.html#s04"><a class="sec" href="Colinha v1.html#s04">[S04]</a></a></td>
+<td><code>scn</code></td>
+</tr>
+<tr>
+<td>Q06</td>
+<td>Ponto recortado na viewport (coordenada y)</td>
+<td><a class="sec" href="Colinha v1.html#s04"><a class="sec" href="Colinha v1.html#s04">[S04]</a></a></td>
+<td><code>viewport / recorta</code></td>
+</tr>
+<tr>
+<td>Q07</td>
+<td>Ponto recortado em SCN (coordenada x)</td>
+<td><a class="sec" href="Colinha v1.html#s04"><a class="sec" href="Colinha v1.html#s04">[S04]</a></a></td>
+<td><code>scn</code></td>
+</tr>
+<tr>
+<td>Q08</td>
+<td>Region codes de dois pontos</td>
+<td><a class="sec" href="Colinha v1.html#s05"><a class="sec" href="Colinha v1.html#s05">[S05]</a></a></td>
+<td><code>region code</code></td>
+</tr>
+<tr>
+<td>Q09</td>
+<td>Ponto em SCN (coordenada x)</td>
+<td><a class="sec" href="Colinha v1.html#s04"><a class="sec" href="Colinha v1.html#s04">[S04]</a></a></td>
+<td><code>scn</code></td>
+</tr>
+<tr>
+<td>Q10</td>
+<td>Nome do algoritmo com pk e qk</td>
+<td><a class="sec" href="Colinha v1.html#s05"><a class="sec" href="Colinha v1.html#s05">[S05]</a></a></td>
+<td><code>pk</code></td>
+</tr>
+<tr>
+<td>Q11</td>
+<td>Ponto na viewport (coordenada x)</td>
+<td><a class="sec" href="Colinha v1.html#s04"><a class="sec" href="Colinha v1.html#s04">[S04]</a></a></td>
+<td><code>viewport</code></td>
+</tr>
+<tr>
+<td>Q12</td>
+<td>Region codes de dois pontos</td>
+<td><a class="sec" href="Colinha v1.html#s05"><a class="sec" href="Colinha v1.html#s05">[S05]</a></a></td>
+<td><code>region code</code></td>
+</tr>
+<tr>
+<td>Q13</td>
+<td>Nome do algoritmo por coeficientes angulares</td>
+<td><a class="sec" href="Colinha v1.html#s05"><a class="sec" href="Colinha v1.html#s05">[S05]</a></a></td>
+<td><code>coeficiente angular</code></td>
+</tr>
+<tr>
+<td>Q14</td>
+<td>Window × viewport: sistema, aspecto, zoom</td>
+<td><a class="sec" href="Colinha v1.html#s04"><a class="sec" href="Colinha v1.html#s04">[S04]</a></a></td>
+<td><code>zoom</code></td>
+</tr>
+<tr>
+<td>Q15</td>
+<td>Window, viewport, aspecto, onde recortar</td>
+<td><a class="sec" href="Colinha v1.html#s04"><a class="sec" href="Colinha v1.html#s04">[S04]</a></a></td>
+<td><code>viewport</code></td>
+</tr>
+<tr>
+<td>Q16</td>
+<td>Instanciamento e posição na window</td>
+<td><a class="sec" href="Colinha v1.html#s04"><a class="sec" href="Colinha v1.html#s04">[S04]</a></a></td>
+<td><code>instanciamento</code></td>
+</tr>
+<tr>
+<td>Q17</td>
+<td>Reconhecer matriz de translação 2D</td>
+<td><a class="sec" href="Colinha v1.html#s03"><a class="sec" href="Colinha v1.html#s03">[S03]</a></a></td>
+<td><code>translação</code></td>
+</tr>
+<tr>
+<td>Q18</td>
+<td>Sx e Sy: escala 2D</td>
+<td><a class="sec" href="Colinha v1.html#s03"><a class="sec" href="Colinha v1.html#s03">[S03]</a></a></td>
+<td><code>diagonal</code></td>
+</tr>
+<tr>
+<td>Q19</td>
+<td>Matriz de translação 3D</td>
+<td><a class="sec" href="Colinha v1.html#s09"><a class="sec" href="Colinha v1.html#s09">[S09]</a></a></td>
+<td><code>translação 3d</code></td>
+</tr>
+<tr>
+<td>Q20</td>
+<td>Expressão [x y 1]·M: homogêneas e W</td>
+<td><a class="sec" href="Colinha v1.html#s03"><a class="sec" href="Colinha v1.html#s03">[S03]</a></a></td>
+<td><code>homogêneas</code></td>
+</tr>
+<tr>
+<td>Q21</td>
+<td>Matriz de escala 3D</td>
+<td><a class="sec" href="Colinha v1.html#s09"><a class="sec" href="Colinha v1.html#s09">[S09]</a></a></td>
+<td><code>escala 3d</code></td>
+</tr>
+<tr>
+<td>Q22</td>
+<td>Reconhecer matriz de rotação 2D</td>
+<td><a class="sec" href="Colinha v1.html#s03"><a class="sec" href="Colinha v1.html#s03">[S03]</a></a></td>
+<td><code>rotação</code></td>
+</tr>
+<tr>
+<td>Q23</td>
+<td>Rotação 3D de 90° em Z</td>
+<td><a class="sec" href="Colinha v1.html#s09"><a class="sec" href="Colinha v1.html#s09">[S09]</a></a></td>
+<td><code>rz</code></td>
+</tr>
+<tr>
+<td>Q24</td>
+<td>Homogêneas 3D: pontos 4D e W</td>
+<td><a class="sec" href="Colinha v1.html#s03"><a class="sec" href="Colinha v1.html#s03">[S03]</a></a></td>
+<td><code>homogêneas</code></td>
+</tr>
+<tr>
+<td>Q25</td>
+<td>Reconhecer matriz de escala 2D</td>
+<td><a class="sec" href="Colinha v1.html#s03"><a class="sec" href="Colinha v1.html#s03">[S03]</a></a></td>
+<td><code>diagonal</code></td>
+</tr>
+<tr>
+<td>Q26</td>
+<td>Rotação 3D de 90° em X</td>
+<td><a class="sec" href="Colinha v1.html#s09"><a class="sec" href="Colinha v1.html#s09">[S09]</a></a></td>
+<td><code>rx</code></td>
+</tr>
+<tr>
+<td>Q27</td>
+<td>Escolher a matriz de translação 3D</td>
+<td><a class="sec" href="Colinha v1.html#s09"><a class="sec" href="Colinha v1.html#s09">[S09]</a></a></td>
+<td><code>translação 3d</code></td>
+</tr>
+<tr>
+<td>Q28</td>
+<td>Rotação 3D de 90° em Y</td>
+<td><a class="sec" href="Colinha v1.html#s09"><a class="sec" href="Colinha v1.html#s09">[S09]</a></a></td>
+<td><code>ry</code></td>
+</tr>
+<tr>
+<td>Q29</td>
+<td>Homogêneas e comutatividade</td>
+<td><a class="sec" href="Colinha v1.html#s03"><a class="sec" href="Colinha v1.html#s03">[S03]</a></a></td>
+<td><code>comutam</code></td>
+</tr>
+<tr>
+<td>Q30</td>
+<td>Girar em torno do centro de massa</td>
+<td><a class="sec" href="Colinha v1.html#s03"><a class="sec" href="Colinha v1.html#s03">[S03]</a></a></td>
+<td><code>em torno</code></td>
+</tr>
+<tr>
+<td>Q31</td>
+<td>Ler matrizes A e B (ordem, centro, mudança de base)</td>
+<td><a class="sec" href="Colinha v1.html#s03"><a class="sec" href="Colinha v1.html#s03">[S03]</a></a></td>
+<td><code>primeiro escala / mudança de base</code></td>
+</tr>
+<tr>
+<td>Q32</td>
+<td>Identificar a matriz de uma rotação + translação</td>
+<td><a class="sec" href="Colinha v1.html#s03"><a class="sec" href="Colinha v1.html#s03">[S03]</a></a></td>
+<td><code>vetor-coluna</code></td>
+</tr>
+<tr>
+<td>Q33</td>
+<td>Matriz aplicada a um vetor</td>
+<td><a class="sec" href="Colinha v1.html#s09"><a class="sec" href="Colinha v1.html#s09">[S09]</a></a></td>
+<td><code>coluna</code></td>
+</tr>
+<tr>
+<td>Q34</td>
+<td>Estrutura de arame e normal</td>
+<td><a class="sec" href="Colinha v1.html#s09"><a class="sec" href="Colinha v1.html#s09">[S09]</a></a></td>
+<td><code>arame</code></td>
+</tr>
+<tr>
+<td>Q35</td>
+<td>Vetor perpendicular a dois</td>
+<td><a class="sec" href="Colinha v1.html#s09"><a class="sec" href="Colinha v1.html#s09">[S09]</a></a></td>
+<td><code>perpendicular</code></td>
+</tr>
+<tr>
+<td>Q36</td>
+<td>Projeção paralela (marque as verdadeiras)</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>oblíqua / ignora Z</code></td>
+</tr>
+<tr>
+<td>Q37</td>
+<td>Características das projeções</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>perspectiva</code></td>
+</tr>
+<tr>
+<td>Q38</td>
+<td>Projeção de ponto num plano por direção</td>
+<td><a class="sec" href="Colinha v1.html#s09"><a class="sec" href="Colinha v1.html#s09">[S09]</a></a></td>
+<td><code>plano</code></td>
+</tr>
+<tr>
+<td>Q39</td>
+<td>Associar etapas da síntese de imagens</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>volume de visão / Gouraud</code></td>
+</tr>
+<tr>
+<td>Q40</td>
+<td>Afirmações sobre o pipeline 3D</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>pipeline</code></td>
+</tr>
+<tr>
+<td>Q41</td>
+<td>Ordem: recorte, projeção, rasterização, visibilidade</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>pipeline</code></td>
+</tr>
+<tr>
+<td>Q42</td>
+<td>Ordem: câmera, recorte 3D, projeção, tela, rasterização</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>pipeline</code></td>
+</tr>
+<tr>
+<td>Q43</td>
+<td>Nome da região recortada e projetada</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>volume de visão</code></td>
+</tr>
+<tr>
+<td>Q44</td>
+<td>Ordem das 5 transformações do pipeline</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>pipeline</code></td>
+</tr>
+<tr>
+<td>Q45</td>
+<td>Transformação de câmera</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>câmera</code></td>
+</tr>
+<tr>
+<td>Q46</td>
+<td>Superfície pela soma com Bernstein</td>
+<td><a class="sec" href="Colinha v1.html#s08"><a class="sec" href="Colinha v1.html#s08">[S08]</a></a></td>
+<td><code>bernstein</code></td>
+</tr>
+<tr>
+<td>Q47</td>
+<td>Componentes do modelo de Phong</td>
+<td><a class="sec" href="Colinha v1.html#s13"><a class="sec" href="Colinha v1.html#s13">[S13]</a></a></td>
+<td><code>phong</code></td>
+</tr>
+<tr>
+<td>Q48</td>
+<td>Para que servem as normais</td>
+<td><a class="sec" href="Colinha v1.html#s13"><a class="sec" href="Colinha v1.html#s13">[S13]</a></a></td>
+<td><code>normais</code></td>
+</tr>
+<tr>
+<td>Q49</td>
+<td>Radiância e radiosidade</td>
+<td><a class="sec" href="Colinha v1.html#s14"><a class="sec" href="Colinha v1.html#s14">[S14]</a></a></td>
+<td><code>radiosidade</code></td>
+</tr>
+<tr>
+<td>Q50</td>
+<td>Nome: raios num volume de voxels</td>
+<td><a class="sec" href="Colinha v1.html#s14"><a class="sec" href="Colinha v1.html#s14">[S14]</a></a></td>
+<td><code>voxel</code></td>
+</tr>
+<tr>
+<td>Q51</td>
+<td>Nome: cor e iluminação por pixel na GPU</td>
+<td><a class="sec" href="Colinha v1.html#s15"><a class="sec" href="Colinha v1.html#s15">[S15]</a></a></td>
+<td><code>pixel shader</code></td>
+</tr>
+<tr>
+<td>Q52</td>
+<td>Nome: raios de trás para frente</td>
+<td><a class="sec" href="Colinha v1.html#s14"><a class="sec" href="Colinha v1.html#s14">[S14]</a></a></td>
+<td><code>trás para frente</code></td>
+</tr>
+<tr>
+<td>Q53</td>
+<td>O que o ray tracing faz</td>
+<td><a class="sec" href="Colinha v1.html#s14"><a class="sec" href="Colinha v1.html#s14">[S14]</a></a></td>
+<td><code>ray tracing</code></td>
+</tr>
+<tr>
+<td>Q54</td>
+<td>Phong × Gouraud, z-buffer, homogêneo, malha triangular</td>
+<td><a class="sec" href="Colinha v1.html#s01"><a class="sec" href="Colinha v1.html#s01">[S01]</a></a></td>
+<td><code>Gouraud / divide tudo por W / planar</code></td>
+</tr>
+<tr>
+<td>Q55</td>
+<td>Normal de superfície paramétrica</td>
+<td><a class="sec" href="Colinha v1.html#s13"><a class="sec" href="Colinha v1.html#s13">[S13]</a></a></td>
+<td><code>paramétrica</code></td>
+</tr>
+<tr>
+<td>Q56</td>
+<td>Modelos de iluminação locais</td>
+<td><a class="sec" href="Colinha v1.html#s13"><a class="sec" href="Colinha v1.html#s13">[S13]</a></a></td>
+<td><code>lambert</code></td>
+</tr>
+<tr>
+<td>Q57</td>
+<td>Fonte de luz no infinito</td>
+<td><a class="sec" href="Colinha v1.html#s13"><a class="sec" href="Colinha v1.html#s13">[S13]</a></a></td>
+<td><code>direcional</code></td>
+</tr>
+<tr>
+<td>Q58</td>
+<td>Afirmações sobre ray tracing</td>
+<td><a class="sec" href="Colinha v1.html#s14"><a class="sec" href="Colinha v1.html#s14">[S14]</a></a></td>
+<td><code>ray tracing</code></td>
+</tr>
+<tr>
+<td>Q59</td>
+<td>Simular a propagação da luz</td>
+<td><a class="sec" href="Colinha v1.html#s14"><a class="sec" href="Colinha v1.html#s14">[S14]</a></a></td>
+<td><code>propagação</code></td>
+</tr>
+<tr>
+<td>Q60</td>
+<td>MSAA</td>
+<td><a class="sec" href="Colinha v1.html#s11"><a class="sec" href="Colinha v1.html#s11">[S11]</a></a></td>
+<td><code>msaa</code></td>
+</tr>
+<tr>
+<td>Q61</td>
+<td>Propriedades do z-buffer</td>
+<td><a class="sec" href="Colinha v1.html#s12"><a class="sec" href="Colinha v1.html#s12">[S12]</a></a></td>
+<td><code>z-buffer</code></td>
+</tr>
+<tr>
+<td>Q62</td>
+<td>Gouraud, volume paralelo, Bresenham, aliasing</td>
+<td><a class="sec" href="Colinha v1.html#s13"><a class="sec" href="Colinha v1.html#s13">[S13]</a></a></td>
+<td><code>gouraud</code></td>
+</tr>
+<tr>
+<td>Q63</td>
+<td>Textura que perturba a normal</td>
+<td><a class="sec" href="Colinha v1.html#s11"><a class="sec" href="Colinha v1.html#s11">[S11]</a></a></td>
+<td><code>bump</code></td>
+</tr>
+<tr>
+<td>Q64</td>
+<td>Duas esferas, uma escondendo a outra</td>
+<td><a class="sec" href="Colinha v1.html#s12"><a class="sec" href="Colinha v1.html#s12">[S12]</a></a></td>
+<td><code>z-buffer</code></td>
+</tr>
+<tr>
+<td>Q65</td>
+<td>MeshSmooth, bump map, flat shading</td>
+<td><a class="sec" href="Colinha v1.html#s02"><a class="sec" href="Colinha v1.html#s02">[S02]</a></a></td>
+<td><code>meshsmooth</code></td>
+</tr>
+<tr>
+<td>Q66</td>
+<td>Função em C que desenha</td>
+<td><a class="sec" href="Colinha v1.html#s11"><a class="sec" href="Colinha v1.html#s11">[S11]</a></a></td>
+<td><code>putpixel</code></td>
+</tr>
+<tr>
+<td>Q67</td>
+<td>Memória extra do mipmap</td>
+<td><a class="sec" href="Colinha v1.html#s11"><a class="sec" href="Colinha v1.html#s11">[S11]</a></a></td>
+<td><code>mipmap</code></td>
+</tr>
+<tr>
+<td>Q68</td>
+<td>Raster, preenchimento, círculo, backface, zoom</td>
+<td><a class="sec" href="Colinha v1.html#s01"><a class="sec" href="Colinha v1.html#s01">[S01]</a></a></td>
+<td><code>pisca</code></td>
+</tr>
+<tr>
+<td>Q69</td>
+<td>ECS</td>
+<td><a class="sec" href="Colinha v1.html#s02"><a class="sec" href="Colinha v1.html#s02">[S02]</a></a></td>
+<td><code>ecs</code></td>
+</tr>
+<tr>
+<td>Q70</td>
+<td>Pacote com motor gráfico, física, som...</td>
+<td><a class="sec" href="Colinha v1.html#s02"><a class="sec" href="Colinha v1.html#s02">[S02]</a></a></td>
+<td><code>engine</code></td>
+</tr>
+<tr>
+<td>Q71</td>
+<td>Exemplos de API gráfica</td>
+<td><a class="sec" href="Colinha v1.html#s02"><a class="sec" href="Colinha v1.html#s02">[S02]</a></a></td>
+<td><code>api</code></td>
+</tr>
+<tr>
+<td>Q72</td>
+<td>Distância do mouse ao centro</td>
+<td><a class="sec" href="Colinha v1.html#s02"><a class="sec" href="Colinha v1.html#s02">[S02]</a></a></td>
+<td><code>envelope</code></td>
+</tr>
+<tr>
+<td>Q73</td>
+<td>Associar técnicas às funções</td>
+<td><a class="sec" href="Colinha v1.html#s00"><a class="sec" href="Colinha v1.html#s00">[S00]</a></a></td>
+<td><code>BSP / Cohen-Sutherland</code></td>
+</tr>
+<tr>
+<td>Q74</td>
+<td>Filtros: qual afirmação é incorreta</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>laplaciano</code></td>
+</tr>
+<tr>
+<td>Q75</td>
+<td>Histograma, brilho/contraste, negativo</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>equalização</code></td>
+</tr>
+<tr>
+<td>Q76</td>
+<td>Definição de segmentação</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>segmentação</code></td>
+</tr>
+<tr>
+<td>Q77</td>
+<td>Passa-baixas numa imagem toda preta</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>passa-baixa</code></td>
+</tr>
+<tr>
+<td>P01</td>
+<td>Window × viewport: sistema, aspecto, zoom</td>
+<td><a class="sec" href="Colinha v1.html#s04"><a class="sec" href="Colinha v1.html#s04">[S04]</a></a></td>
+<td><code>zoom</code></td>
+</tr>
+<tr>
+<td>P02</td>
+<td>Propriedades do z-buffer</td>
+<td><a class="sec" href="Colinha v1.html#s12"><a class="sec" href="Colinha v1.html#s12">[S12]</a></a></td>
+<td><code>z-buffer</code></td>
+</tr>
+<tr>
+<td>P03</td>
+<td>Afirmações sobre o pipeline 3D</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>pipeline</code></td>
+</tr>
+<tr>
+<td>P04</td>
+<td>Ordem: câmera, recorte 3D, projeção, tela, rasterização</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>pipeline</code></td>
+</tr>
+<tr>
+<td>P05</td>
+<td>Instanciamento e posição na window</td>
+<td><a class="sec" href="Colinha v1.html#s04"><a class="sec" href="Colinha v1.html#s04">[S04]</a></a></td>
+<td><code>instanciamento</code></td>
+</tr>
+<tr>
+<td>P06</td>
+<td>Transformação de câmera</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>câmera</code></td>
+</tr>
+<tr>
+<td>P07</td>
+<td>O que o ray tracing faz</td>
+<td><a class="sec" href="Colinha v1.html#s14"><a class="sec" href="Colinha v1.html#s14">[S14]</a></a></td>
+<td><code>ray tracing</code></td>
+</tr>
+<tr>
+<td>P08</td>
+<td>Afirmações sobre ray tracing</td>
+<td><a class="sec" href="Colinha v1.html#s14"><a class="sec" href="Colinha v1.html#s14">[S14]</a></a></td>
+<td><code>ray tracing</code></td>
+</tr>
+<tr>
+<td>P09</td>
+<td>Pistas de profundidade</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>profundidade</code></td>
+</tr>
+<tr>
+<td>P10</td>
+<td>Raster, preenchimento, círculo, backface, zoom</td>
+<td><a class="sec" href="Colinha v1.html#s01"><a class="sec" href="Colinha v1.html#s01">[S01]</a></a></td>
+<td><code>pisca</code></td>
+</tr>
+<tr>
+<td>P11</td>
+<td>Projeção de ponto num plano por direção</td>
+<td><a class="sec" href="Colinha v1.html#s09"><a class="sec" href="Colinha v1.html#s09">[S09]</a></a></td>
+<td><code>plano</code></td>
+</tr>
+<tr>
+<td>P12</td>
+<td>Raster, backface, ponto médio do círculo</td>
+<td><a class="sec" href="Colinha v1.html#s01"><a class="sec" href="Colinha v1.html#s01">[S01]</a></a></td>
+<td><code>pisca</code></td>
+</tr>
+<tr>
+<td>P13</td>
+<td>Projeção de ponto num plano por direção</td>
+<td><a class="sec" href="Colinha v1.html#s09"><a class="sec" href="Colinha v1.html#s09">[S09]</a></a></td>
+<td><code>plano</code></td>
+</tr>
+<tr>
+<td>P14</td>
+<td>Distância do mouse ao centro</td>
+<td><a class="sec" href="Colinha v1.html#s02"><a class="sec" href="Colinha v1.html#s02">[S02]</a></a></td>
+<td><code>envelope</code></td>
+</tr>
+<tr>
+<td>P15</td>
+<td>Função em C que desenha</td>
+<td><a class="sec" href="Colinha v1.html#s11"><a class="sec" href="Colinha v1.html#s11">[S11]</a></a></td>
+<td><code>putpixel</code></td>
+</tr>
+<tr>
+<td>P16</td>
+<td>Normais, compressão, iluminação local, cor, afim</td>
+<td><a class="sec" href="Colinha v1.html#s21"><a class="sec" href="Colinha v1.html#s21">[S21]</a></a></td>
+<td><code>inversa transposta / saturação / mesma cor / sombra</code></td>
+</tr>
+<tr>
+<td>P17</td>
+<td>Identificar a matriz de uma rotação + translação</td>
+<td><a class="sec" href="Colinha v1.html#s03"><a class="sec" href="Colinha v1.html#s03">[S03]</a></a></td>
+<td><code>vetor-coluna</code></td>
+</tr>
+<tr>
+<td>P18</td>
+<td>Ordem: recorte, projeção, rasterização, visibilidade</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>pipeline</code></td>
+</tr>
+<tr>
+<td>P19</td>
+<td>Phong × Gouraud, z-buffer, homogêneo, malha triangular</td>
+<td><a class="sec" href="Colinha v1.html#s01"><a class="sec" href="Colinha v1.html#s01">[S01]</a></a></td>
+<td><code>Gouraud / divide tudo por W / planar</code></td>
+</tr>
+<tr>
+<td>P20</td>
+<td>Girar em torno do centro de massa</td>
+<td><a class="sec" href="Colinha v1.html#s03"><a class="sec" href="Colinha v1.html#s03">[S03]</a></a></td>
+<td><code>em torno</code></td>
+</tr>
+<tr>
+<td>P21</td>
+<td>Normal de superfície paramétrica</td>
+<td><a class="sec" href="Colinha v1.html#s13"><a class="sec" href="Colinha v1.html#s13">[S13]</a></a></td>
+<td><code>paramétrica</code></td>
+</tr>
+<tr>
+<td>P22</td>
+<td>Associar etapas da síntese de imagens</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>volume de visão / Gouraud</code></td>
+</tr>
+<tr>
+<td>P23</td>
+<td>Modelos de iluminação locais</td>
+<td><a class="sec" href="Colinha v1.html#s13"><a class="sec" href="Colinha v1.html#s13">[S13]</a></a></td>
+<td><code>lambert</code></td>
+</tr>
+<tr>
+<td>P24</td>
+<td>Duas esferas, uma escondendo a outra</td>
+<td><a class="sec" href="Colinha v1.html#s12"><a class="sec" href="Colinha v1.html#s12">[S12]</a></a></td>
+<td><code>z-buffer</code></td>
+</tr>
+<tr>
+<td>P25</td>
+<td>MSAA</td>
+<td><a class="sec" href="Colinha v1.html#s11"><a class="sec" href="Colinha v1.html#s11">[S11]</a></a></td>
+<td><code>msaa</code></td>
+</tr>
+<tr>
+<td>P26</td>
+<td>Gouraud, volume paralelo, Bresenham, aliasing</td>
+<td><a class="sec" href="Colinha v1.html#s13"><a class="sec" href="Colinha v1.html#s13">[S13]</a></a></td>
+<td><code>gouraud</code></td>
+</tr>
+<tr>
+<td>P27</td>
+<td>Associar técnicas às funções</td>
+<td><a class="sec" href="Colinha v1.html#s00"><a class="sec" href="Colinha v1.html#s00">[S00]</a></a></td>
+<td><code>BSP / Cohen-Sutherland</code></td>
+</tr>
+<tr>
+<td>P28</td>
+<td>Memória extra do mipmap</td>
+<td><a class="sec" href="Colinha v1.html#s11"><a class="sec" href="Colinha v1.html#s11">[S11]</a></a></td>
+<td><code>mipmap</code></td>
+</tr>
+<tr>
+<td>P29</td>
+<td>Estrutura de arame e normal</td>
+<td><a class="sec" href="Colinha v1.html#s09"><a class="sec" href="Colinha v1.html#s09">[S09]</a></a></td>
+<td><code>arame</code></td>
+</tr>
+<tr>
+<td>P30</td>
+<td>Ler matrizes A e B</td>
+<td><a class="sec" href="Colinha v1.html#s03"><a class="sec" href="Colinha v1.html#s03">[S03]</a></a></td>
+<td><code>primeiro escala / mudança de base</code></td>
+</tr>
+<tr>
+<td>P31</td>
+<td>Simular a propagação da luz</td>
+<td><a class="sec" href="Colinha v1.html#s14"><a class="sec" href="Colinha v1.html#s14">[S14]</a></a></td>
+<td><code>propagação</code></td>
+</tr>
+<tr>
+<td>P32</td>
+<td>Superfície pela soma com Bernstein</td>
+<td><a class="sec" href="Colinha v1.html#s08"><a class="sec" href="Colinha v1.html#s08">[S08]</a></a></td>
+<td><code>bernstein</code></td>
+</tr>
+<tr>
+<td>P33</td>
+<td>MeshSmooth, bump map, flat shading</td>
+<td><a class="sec" href="Colinha v1.html#s02"><a class="sec" href="Colinha v1.html#s02">[S02]</a></a></td>
+<td><code>meshsmooth</code></td>
+</tr>
+<tr>
+<td>P34</td>
+<td>Homogêneas e comutatividade</td>
+<td><a class="sec" href="Colinha v1.html#s03"><a class="sec" href="Colinha v1.html#s03">[S03]</a></a></td>
+<td><code>comutam</code></td>
+</tr>
+<tr>
+<td>P35</td>
+<td>Características das projeções</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>perspectiva</code></td>
+</tr>
+<tr>
+<td>P36</td>
+<td>Window, viewport, aspecto, onde recortar</td>
+<td><a class="sec" href="Colinha v1.html#s04"><a class="sec" href="Colinha v1.html#s04">[S04]</a></a></td>
+<td><code>viewport</code></td>
+</tr>
+<tr>
+<td>P37</td>
+<td>Nome da região recortada e projetada</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>volume de visão</code></td>
+</tr>
+<tr>
+<td>P38</td>
+<td>Ordem das 5 transformações do pipeline</td>
+<td><a class="sec" href="Colinha v1.html#s10"><a class="sec" href="Colinha v1.html#s10">[S10]</a></a></td>
+<td><code>pipeline</code></td>
+</tr>
+<tr>
+<td>P39</td>
+<td>Textura que perturba a normal</td>
+<td><a class="sec" href="Colinha v1.html#s11"><a class="sec" href="Colinha v1.html#s11">[S11]</a></a></td>
+<td><code>bump</code></td>
+</tr>
+<tr>
+<td>P40</td>
+<td>Vetor perpendicular a dois</td>
+<td><a class="sec" href="Colinha v1.html#s09"><a class="sec" href="Colinha v1.html#s09">[S09]</a></a></td>
+<td><code>perpendicular</code></td>
+</tr>
+<tr>
+<td>P41</td>
+<td>Fonte de luz no infinito</td>
+<td><a class="sec" href="Colinha v1.html#s13"><a class="sec" href="Colinha v1.html#s13">[S13]</a></a></td>
+<td><code>direcional</code></td>
+</tr>
+<tr>
+<td>P42</td>
+<td>Texturas: 2D, procedural, bump</td>
+<td><a class="sec" href="Colinha v1.html#s11"><a class="sec" href="Colinha v1.html#s11">[S11]</a></a></td>
+<td><code>textura</code></td>
+</tr>
+<tr>
+<td>P43</td>
+<td>Tonalização que interpola normais</td>
+<td><a class="sec" href="Colinha v1.html#s13"><a class="sec" href="Colinha v1.html#s13">[S13]</a></a></td>
+<td><code>phong shading</code></td>
+</tr>
+<tr>
+<td>P44</td>
+<td>Afirmações sobre ray tracing (z-buffer, difuso, secundários)</td>
+<td><a class="sec" href="Colinha v1.html#s14"><a class="sec" href="Colinha v1.html#s14">[S14]</a></a></td>
+<td><code>ray tracing</code></td>
+</tr>
+<tr>
+<td>P45</td>
+<td>O que não é técnica de superfície oculta</td>
+<td><a class="sec" href="Colinha v1.html#s12"><a class="sec" href="Colinha v1.html#s12">[S12]</a></a></td>
+<td><code>ocultas</code></td>
+</tr>
+<tr>
+<td>P46</td>
+<td>Matrizes A e B: centro, ordem, homogêneas</td>
+<td><a class="sec" href="Colinha v1.html#s03"><a class="sec" href="Colinha v1.html#s03">[S03]</a></a></td>
+<td><code>só a translação / primeiro escala</code></td>
+</tr>
+<tr>
+<td>P47</td>
+<td>Ray tracing, z-buffer e Phong (afirmações)</td>
+<td><a class="sec" href="Colinha v1.html#s14"><a class="sec" href="Colinha v1.html#s14">[S14]</a></a></td>
+<td><code>ray tracing</code></td>
+</tr>
+<tr>
+<td>P48</td>
+<td>Tarefas da etapa de rendering</td>
+<td><a class="sec" href="Colinha v1.html#s15"><a class="sec" href="Colinha v1.html#s15">[S15]</a></a></td>
+<td><code>rendering</code></td>
+</tr>
+<tr>
+<td>P49</td>
+<td>O que é mipmapping</td>
+<td><a class="sec" href="Colinha v1.html#s11"><a class="sec" href="Colinha v1.html#s11">[S11]</a></a></td>
+<td><code>mipmap</code></td>
+</tr>
+<tr>
+<td>P50</td>
+<td>Matriz de rotação em torno de um ponto (números)</td>
+<td><a class="sec" href="Colinha v1.html#s03"><a class="sec" href="Colinha v1.html#s03">[S03]</a></a></td>
+<td><code>em torno</code></td>
+</tr>
+<tr>
+<td>P51</td>
+<td>Flat, Gouraud e Phong (afirmações)</td>
+<td><a class="sec" href="Colinha v1.html#s13"><a class="sec" href="Colinha v1.html#s13">[S13]</a></a></td>
+<td><code>flat</code></td>
+</tr>
+<tr>
+<td>P52</td>
+<td>Reconhecer reflexão pela matriz</td>
+<td><a class="sec" href="Colinha v1.html#s21"><a class="sec" href="Colinha v1.html#s21">[S21]</a></a></td>
+<td><code>reflexão através</code></td>
+</tr>
+<tr>
+<td>P53</td>
+<td>Matriz aplicada a um vetor</td>
+<td><a class="sec" href="Colinha v1.html#s09"><a class="sec" href="Colinha v1.html#s09">[S09]</a></a></td>
+<td><code>coluna</code></td>
+</tr>
+<tr>
+<td>P54</td>
+<td>Normal de um triângulo por 3 pontos</td>
+<td><a class="sec" href="Colinha v1.html#s21"><a class="sec" href="Colinha v1.html#s21">[S21]</a></a></td>
+<td><code>normal de um triângulo</code></td>
+</tr>
+<tr>
+<td>P55</td>
+<td>Ângulo de uma rotação dada por um par</td>
+<td><a class="sec" href="Colinha v1.html#s21"><a class="sec" href="Colinha v1.html#s21">[S21]</a></a></td>
+<td><code>rotação dada por um par</code></td>
+</tr>
+<tr>
+<td>P56</td>
+<td>Propriedades do produto vetorial</td>
+<td><a class="sec" href="Colinha v1.html#s21"><a class="sec" href="Colinha v1.html#s21">[S21]</a></a></td>
+<td><code>produto vetorial</code></td>
+</tr>
+<tr>
+<td>P57</td>
+<td>Plano por 3 pontos: equações, LI, normal</td>
+<td><a class="sec" href="Colinha v1.html#s21"><a class="sec" href="Colinha v1.html#s21">[S21]</a></a></td>
+<td><code>equação geral</code></td>
+</tr>
+<tr>
+<td>P58</td>
+<td>Produto escalar e ângulo</td>
+<td><a class="sec" href="Colinha v1.html#s21"><a class="sec" href="Colinha v1.html#s21">[S21]</a></a></td>
+<td><code>produto escalar</code></td>
+</tr>
+<tr>
+<td>P59</td>
+<td>Produto escalar e vetorial numéricos</td>
+<td><a class="sec" href="Colinha v1.html#s21"><a class="sec" href="Colinha v1.html#s21">[S21]</a></a></td>
+<td><code>produto vetorial</code></td>
+</tr>
+<tr>
+<td>P60</td>
+<td>Definição de histograma</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>histograma</code></td>
+</tr>
+<tr>
+<td>P61</td>
+<td>Para que serve a mediana</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>mediana</code></td>
+</tr>
+<tr>
+<td>P62</td>
+<td>Descritores de textura</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>co-ocorrência</code></td>
+</tr>
+<tr>
+<td>P63</td>
+<td>Filtros: qual afirmação é incorreta</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>laplaciano</code></td>
+</tr>
+<tr>
+<td>P64</td>
+<td>Histograma, brilho/contraste, negativo</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>equalização</code></td>
+</tr>
+<tr>
+<td>P65</td>
+<td>Ordem das etapas da análise de imagens</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>análise de imagens</code></td>
+</tr>
+<tr>
+<td>P66</td>
+<td>Discretizar espaço e amplitude</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>amostragem</code></td>
+</tr>
+<tr>
+<td>P67</td>
+<td>Média × mediana (características)</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>mediana</code></td>
+</tr>
+<tr>
+<td>P68</td>
+<td>Convolução de [−1 2 −1] numa rampa</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>[−1 2 −1]</code></td>
+</tr>
+<tr>
+<td>P69</td>
+<td>Passa-baixas numa imagem toda preta</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>passa-baixa</code></td>
+</tr>
+<tr>
+<td>P70</td>
+<td>Técnicas de realce</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>realce</code></td>
+</tr>
+<tr>
+<td>P71</td>
+<td>Comprimento médio de código Huffman</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>huffman</code></td>
+</tr>
+<tr>
+<td>P72</td>
+<td>Contraste em cor sem mudar o tom</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>ihs</code></td>
+</tr>
+<tr>
+<td>P73</td>
+<td>Média e mediana 3×3 em padrões</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>mediana</code></td>
+</tr>
+<tr>
+<td>P74</td>
+<td>Filtro de diferença e orientação das bordas</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>direcional</code></td>
+</tr>
+<tr>
+<td>P75</td>
+<td>Definição de segmentação</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>segmentação</code></td>
+</tr>
+<tr>
+<td>P76</td>
+<td>Transformação do negativo</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>negativo</code></td>
+</tr>
+<tr>
+<td>P77</td>
+<td>O que é e o que não é segmentação</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>segmentação</code></td>
+</tr>
+<tr>
+<td>P78</td>
+<td>Luminância a partir de RGB</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>luminância</code></td>
+</tr>
+<tr>
+<td>P79</td>
+<td>Classificador de distância mínima</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>distância mínima</code></td>
+</tr>
+<tr>
+<td>P80</td>
+<td>Transformadas: núcleo separável e simétrico</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>separável</code></td>
+</tr>
+<tr>
+<td>P81</td>
+<td>Filtro para tirar pontos preservando forma</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>mediana</code></td>
+</tr>
+<tr>
+<td>P82</td>
+<td>Histograma e equalização (afirmações)</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>histograma</code></td>
+</tr>
+<tr>
+<td>P83</td>
+<td>Associar máscaras às matrizes</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>sobel</code></td>
+</tr>
+<tr>
+<td>P84</td>
+<td>Fourier: espectro, fase, separabilidade</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>fourier</code></td>
+</tr>
+<tr>
+<td>P85</td>
+<td>Objetivo de um filtro digital</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>filtro</code></td>
+</tr>
+<tr>
+<td>P86</td>
+<td>O que não é modelo de imagem</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>doi</code></td>
+</tr>
+<tr>
+<td>P87</td>
+<td>Objetivo da equalização</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>equalização</code></td>
+</tr>
+<tr>
+<td>P88</td>
+<td>Resultado do passa-baixa</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>passa-baixa</code></td>
+</tr>
+<tr>
+<td>P89</td>
+<td>O que não é técnica de PDI</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>têmpera</code></td>
+</tr>
+<tr>
+<td>P90</td>
+<td>Wavelet</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>wavelet</code></td>
+</tr>
+<tr>
+<td>P91</td>
+<td>Equalização de cores</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>equalização</code></td>
+</tr>
+<tr>
+<td>P92</td>
+<td>Definição de quantização</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>quantização</code></td>
+</tr>
+<tr>
+<td>P93</td>
+<td>Resultado da equalização</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>equalização</code></td>
+</tr>
+<tr>
+<td>P94</td>
+<td>Visão estéreo</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>estéreo</code></td>
+</tr>
+<tr>
+<td>P95</td>
+<td>Restauração de imagens (afirmações)</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>restauração</code></td>
+</tr>
+<tr>
+<td>P96</td>
+<td>Codificação por planos de bits</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>planos de bits</code></td>
+</tr>
+<tr>
+<td>P97</td>
+<td>Interpolação: vizinho, bilinear, bicúbica</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>interpolação</code></td>
+</tr>
+<tr>
+<td>P98</td>
+<td>Rede neural de uma unidade</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>perceptron</code></td>
+</tr>
+<tr>
+<td>P99</td>
+<td>Amostragem e quantização (lacunas)</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>amostragem</code></td>
+</tr>
+<tr>
+<td>P100</td>
+<td>Filtragem: média, passa-baixa, laplaciano, domínios</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>laplaciano</code></td>
+</tr>
+<tr>
+<td>P101</td>
+<td>Compressão: RLE, lossy, BMP</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>rle</code></td>
+</tr>
+<tr>
+<td>P102</td>
+<td>Tamanho da máscara da média</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>M×M</code></td>
+</tr>
+<tr>
+<td>P103</td>
+<td>JPEG</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>jpeg</code></td>
+</tr>
+<tr>
+<td>P104</td>
+<td>Amostragem × quantização</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>amostragem</code></td>
+</tr>
+<tr>
+<td>P105</td>
+<td>Filtros na frequência</td>
+<td><a class="sec" href="Colinha v1.html#s18"><a class="sec" href="Colinha v1.html#s18">[S18]</a></a></td>
+<td><code>passa-alta</code></td>
+</tr>
+</tbody>
+</table>
+</main></body></html>
